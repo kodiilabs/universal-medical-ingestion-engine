@@ -1,0 +1,386 @@
+{
+  "414545008": {
+    "name": "Ischemic heart disease",
+    "category": "disorder",
+    "aliases": ["IHD", "coronary artery disease", "CAD", "coronary heart disease"],
+    "related_findings": ["chest pain", "angina", "myocardial infarction"]
+  },
+  "73211009": {
+    "name": "Diabetes mellitus",
+    "category": "disorder",
+    "aliases": ["diabetes", "DM"],
+    "related_findings": ["hyperglycemia", "elevated glucose", "high blood sugar"]
+  },
+  "44054006": {
+    "name": "Type 2 diabetes mellitus",
+    "category": "disorder",
+    "aliases": ["T2DM", "type 2 diabetes", "adult-onset diabetes", "NIDDM"],
+    "related_findings": ["insulin resistance", "hyperglycemia"]
+  },
+  "46635009": {
+    "name": "Type 1 diabetes mellitus",
+    "category": "disorder",
+    "aliases": ["T1DM", "type 1 diabetes", "juvenile diabetes", "IDDM"],
+    "related_findings": ["insulin deficiency", "hyperglycemia", "ketoacidosis"]
+  },
+  "38341003": {
+    "name": "Hypertensive disorder",
+    "category": "disorder",
+    "aliases": ["hypertension", "HTN", "high blood pressure", "elevated blood pressure"],
+    "related_findings": ["elevated systolic pressure", "elevated diastolic pressure"]
+  },
+  "59621000": {
+    "name": "Essential hypertension",
+    "category": "disorder",
+    "aliases": ["primary hypertension", "idiopathic hypertension"],
+    "related_findings": ["elevated blood pressure"]
+  },
+  "13645005": {
+    "name": "Chronic obstructive pulmonary disease",
+    "category": "disorder",
+    "aliases": ["COPD", "chronic obstructive lung disease", "COLD"],
+    "related_findings": ["dyspnea", "chronic cough", "wheezing"]
+  },
+  "195967001": {
+    "name": "Asthma",
+    "category": "disorder",
+    "aliases": ["bronchial asthma"],
+    "related_findings": ["wheezing", "dyspnea", "bronchospasm"]
+  },
+  "49436004": {
+    "name": "Atrial fibrillation",
+    "category": "disorder",
+    "aliases": ["AFib", "AF", "atrial fib"],
+    "related_findings": ["irregular heart rhythm", "palpitations"]
+  },
+  "84114007": {
+    "name": "Heart failure",
+    "category": "disorder",
+    "aliases": ["cardiac failure", "CHF", "congestive heart failure"],
+    "related_findings": ["dyspnea", "edema", "fatigue"]
+  },
+  "90708001": {
+    "name": "Kidney disease",
+    "category": "disorder",
+    "aliases": ["renal disease", "nephropathy"],
+    "related_findings": ["elevated creatinine", "proteinuria", "decreased GFR"]
+  },
+  "709044004": {
+    "name": "Chronic kidney disease",
+    "category": "disorder",
+    "aliases": ["CKD", "chronic renal disease", "chronic renal failure"],
+    "related_findings": ["elevated creatinine", "decreased GFR", "proteinuria"]
+  },
+  "235856003": {
+    "name": "Liver disease",
+    "category": "disorder",
+    "aliases": ["hepatic disease"],
+    "related_findings": ["elevated liver enzymes", "jaundice", "hepatomegaly"]
+  },
+  "19829001": {
+    "name": "Disorder of lung",
+    "category": "disorder",
+    "aliases": ["pulmonary disorder", "lung disease"],
+    "related_findings": ["dyspnea", "cough", "abnormal breathing"]
+  },
+  "271737000": {
+    "name": "Anemia",
+    "category": "disorder",
+    "aliases": ["anaemia", "low hemoglobin"],
+    "related_findings": ["decreased hemoglobin", "decreased hematocrit", "fatigue"]
+  },
+  "87522002": {
+    "name": "Iron deficiency anemia",
+    "category": "disorder",
+    "aliases": ["IDA"],
+    "related_findings": ["low hemoglobin", "low ferritin", "microcytosis"]
+  },
+  "64779008": {
+    "name": "Blood coagulation disorder",
+    "category": "disorder",
+    "aliases": ["coagulopathy", "bleeding disorder"],
+    "related_findings": ["prolonged PT", "prolonged PTT", "abnormal INR"]
+  },
+  "14183003": {
+    "name": "Hyperlipidemia",
+    "category": "disorder",
+    "aliases": ["dyslipidemia", "high cholesterol"],
+    "related_findings": ["elevated cholesterol", "elevated LDL", "elevated triglycerides"]
+  },
+  "166830008": {
+    "name": "Serum creatinine raised",
+    "category": "finding",
+    "aliases": ["elevated creatinine", "high creatinine", "increased creatinine"],
+    "related_disorders": ["kidney disease", "renal failure", "dehydration"]
+  },
+  "166922004": {
+    "name": "Serum sodium low",
+    "category": "finding",
+    "aliases": ["hyponatremia", "low sodium"],
+    "related_disorders": ["SIADH", "heart failure", "cirrhosis"]
+  },
+  "166924003": {
+    "name": "Serum sodium high",
+    "category": "finding",
+    "aliases": ["hypernatremia", "elevated sodium", "high sodium"],
+    "related_disorders": ["dehydration", "diabetes insipidus"]
+  },
+  "166931001": {
+    "name": "Serum potassium low",
+    "category": "finding",
+    "aliases": ["hypokalemia", "low potassium"],
+    "related_disorders": ["diuretic use", "vomiting", "diarrhea"]
+  },
+  "166932008": {
+    "name": "Serum potassium high",
+    "category": "finding",
+    "aliases": ["hyperkalemia", "elevated potassium", "high potassium"],
+    "related_disorders": ["kidney disease", "acidosis", "cell lysis"]
+  },
+  "394703007": {
+    "name": "Abnormal glucose",
+    "category": "finding",
+    "aliases": ["glucose abnormality"],
+    "related_disorders": ["diabetes", "prediabetes"]
+  },
+  "80394007": {
+    "name": "Hyperglycemia",
+    "category": "finding",
+    "aliases": ["high blood glucose", "elevated glucose", "high blood sugar"],
+    "related_disorders": ["diabetes mellitus", "stress", "steroid use"]
+  },
+  "302866003": {
+    "name": "Hypoglycemia",
+    "category": "finding",
+    "aliases": ["low blood glucose", "low blood sugar"],
+    "related_disorders": ["insulin overdose", "insulinoma", "starvation"]
+  },
+  "165513003": {
+    "name": "Hemoglobin low",
+    "category": "finding",
+    "aliases": ["low hemoglobin", "decreased hemoglobin"],
+    "related_disorders": ["anemia", "bleeding", "hemolysis"]
+  },
+  "165515005": {
+    "name": "Hemoglobin high",
+    "category": "finding",
+    "aliases": ["elevated hemoglobin", "polycythemia"],
+    "related_disorders": ["polycythemia vera", "dehydration", "COPD"]
+  },
+  "165517002": {
+    "name": "White blood cell count abnormal",
+    "category": "finding",
+    "aliases": ["abnormal WBC", "WBC abnormality"],
+    "related_disorders": ["infection", "leukemia", "immune disorder"]
+  },
+  "414478003": {
+    "name": "Leukocytosis",
+    "category": "finding",
+    "aliases": ["elevated WBC", "high white blood cells"],
+    "related_disorders": ["infection", "inflammation", "leukemia"]
+  },
+  "416580007": {
+    "name": "Leukopenia",
+    "category": "finding",
+    "aliases": ["low WBC", "decreased white blood cells"],
+    "related_disorders": ["bone marrow suppression", "viral infection", "chemotherapy"]
+  },
+  "415116008": {
+    "name": "Thrombocytopenia",
+    "category": "finding",
+    "aliases": ["low platelets", "decreased platelet count"],
+    "related_disorders": ["ITP", "bone marrow failure", "sepsis"]
+  },
+  "428251008": {
+    "name": "Thrombocytosis",
+    "category": "finding",
+    "aliases": ["high platelets", "elevated platelet count"],
+    "related_disorders": ["essential thrombocythemia", "iron deficiency", "inflammation"]
+  },
+  "166842003": {
+    "name": "Cholesterol high",
+    "category": "finding",
+    "aliases": ["hypercholesterolemia", "elevated cholesterol"],
+    "related_disorders": ["hyperlipidemia", "familial hypercholesterolemia"]
+  },
+  "166832000": {
+    "name": "LDL cholesterol high",
+    "category": "finding",
+    "aliases": ["elevated LDL", "high LDL"],
+    "related_disorders": ["hyperlipidemia", "cardiovascular disease risk"]
+  },
+  "166831007": {
+    "name": "HDL cholesterol low",
+    "category": "finding",
+    "aliases": ["low HDL"],
+    "related_disorders": ["metabolic syndrome", "cardiovascular disease risk"]
+  },
+  "166845001": {
+    "name": "Triglycerides raised",
+    "category": "finding",
+    "aliases": ["hypertriglyceridemia", "elevated triglycerides"],
+    "related_disorders": ["metabolic syndrome", "pancreatitis risk"]
+  },
+  "166643006": {
+    "name": "Liver function tests abnormal",
+    "category": "finding",
+    "aliases": ["abnormal LFTs", "elevated liver enzymes"],
+    "related_disorders": ["hepatitis", "cirrhosis", "fatty liver"]
+  },
+  "166603001": {
+    "name": "Alanine aminotransferase raised",
+    "category": "finding",
+    "aliases": ["elevated ALT", "high ALT"],
+    "related_disorders": ["hepatitis", "fatty liver", "drug toxicity"]
+  },
+  "166608005": {
+    "name": "Aspartate aminotransferase raised",
+    "category": "finding",
+    "aliases": ["elevated AST", "high AST"],
+    "related_disorders": ["hepatitis", "cirrhosis", "myocardial infarction"]
+  },
+  "166612004": {
+    "name": "Alkaline phosphatase raised",
+    "category": "finding",
+    "aliases": ["elevated ALP", "high alkaline phosphatase"],
+    "related_disorders": ["cholestasis", "bone disease", "liver disease"]
+  },
+  "166646003": {
+    "name": "Bilirubin raised",
+    "category": "finding",
+    "aliases": ["hyperbilirubinemia", "elevated bilirubin"],
+    "related_disorders": ["jaundice", "hemolysis", "liver disease"]
+  },
+  "165844007": {
+    "name": "Thyroid stimulating hormone abnormal",
+    "category": "finding",
+    "aliases": ["abnormal TSH"],
+    "related_disorders": ["hypothyroidism", "hyperthyroidism"]
+  },
+  "165847000": {
+    "name": "Thyroid stimulating hormone raised",
+    "category": "finding",
+    "aliases": ["elevated TSH", "high TSH"],
+    "related_disorders": ["hypothyroidism", "thyroid dysfunction"]
+  },
+  "165848005": {
+    "name": "Thyroid stimulating hormone low",
+    "category": "finding",
+    "aliases": ["low TSH", "suppressed TSH"],
+    "related_disorders": ["hyperthyroidism", "thyroid suppression"]
+  },
+  "165535007": {
+    "name": "Prothrombin time prolonged",
+    "category": "finding",
+    "aliases": ["prolonged PT", "elevated PT"],
+    "related_disorders": ["coagulopathy", "warfarin therapy", "liver disease"]
+  },
+  "165849002": {
+    "name": "International normalized ratio raised",
+    "category": "finding",
+    "aliases": ["elevated INR", "high INR"],
+    "related_disorders": ["warfarin therapy", "coagulopathy", "liver disease"]
+  },
+  "165852005": {
+    "name": "Partial thromboplastin time prolonged",
+    "category": "finding",
+    "aliases": ["prolonged PTT", "prolonged aPTT"],
+    "related_disorders": ["hemophilia", "heparin therapy", "coagulopathy"]
+  },
+  "363680008": {
+    "name": "Radiographic imaging procedure",
+    "category": "procedure",
+    "aliases": ["x-ray", "radiograph", "imaging study"],
+    "related_findings": []
+  },
+  "77477000": {
+    "name": "Computed tomography",
+    "category": "procedure",
+    "aliases": ["CT scan", "CAT scan"],
+    "related_findings": []
+  },
+  "113091000": {
+    "name": "Magnetic resonance imaging",
+    "category": "procedure",
+    "aliases": ["MRI", "MR imaging"],
+    "related_findings": []
+  },
+  "16310003": {
+    "name": "Ultrasonography",
+    "category": "procedure",
+    "aliases": ["ultrasound", "sonogram", "US"],
+    "related_findings": []
+  },
+  "269944004": {
+    "name": "Mammography",
+    "category": "procedure",
+    "aliases": ["mammogram", "breast imaging"],
+    "related_findings": []
+  },
+  "303653007": {
+    "name": "Computed tomography of chest",
+    "category": "procedure",
+    "aliases": ["chest CT", "thorax CT"],
+    "related_findings": []
+  },
+  "418693006": {
+    "name": "Computed tomography of abdomen",
+    "category": "procedure",
+    "aliases": ["abdominal CT", "abdomen CT"],
+    "related_findings": []
+  },
+  "433232001": {
+    "name": "Computed tomography of head",
+    "category": "procedure",
+    "aliases": ["head CT", "brain CT", "CT head"],
+    "related_findings": []
+  },
+  "396550006": {
+    "name": "Blood specimen collection",
+    "category": "procedure",
+    "aliases": ["blood draw", "venipuncture", "phlebotomy"],
+    "related_findings": []
+  },
+  "122575003": {
+    "name": "Urine specimen collection",
+    "category": "procedure",
+    "aliases": ["urine collection", "urinalysis specimen"],
+    "related_findings": []
+  },
+  "258580003": {
+    "name": "Complete blood count",
+    "category": "procedure",
+    "aliases": ["CBC", "full blood count", "FBC"],
+    "related_findings": []
+  },
+  "104943003": {
+    "name": "Comprehensive metabolic panel",
+    "category": "procedure",
+    "aliases": ["CMP", "metabolic panel"],
+    "related_findings": []
+  },
+  "26958001": {
+    "name": "Lipid panel",
+    "category": "procedure",
+    "aliases": ["lipid profile", "cholesterol panel"],
+    "related_findings": []
+  },
+  "252385000": {
+    "name": "Liver function tests",
+    "category": "procedure",
+    "aliases": ["LFTs", "hepatic function panel"],
+    "related_findings": []
+  },
+  "61651006": {
+    "name": "Thyroid function tests",
+    "category": "procedure",
+    "aliases": ["TFTs", "thyroid panel"],
+    "related_findings": []
+  },
+  "165841004": {
+    "name": "Coagulation studies",
+    "category": "procedure",
+    "aliases": ["coag panel", "clotting studies"],
+    "related_findings": []
+  }
+}

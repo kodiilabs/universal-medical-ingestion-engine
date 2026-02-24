@@ -1,0 +1,346 @@
+{
+  "id": "labcorp_cbc_v1",
+  "vendor": "LabCorp",
+  "test_type": "cbc",
+  "version": 2,
+  "description": "LabCorp Complete Blood Count with Differential",
+  "header_pattern": "CBC With Differential|Complete Blood Count|CBC.*Platelet",
+  "vendor_markers": [
+    "Laboratory Corporation of America",
+    "LabCorp",
+    "labcorp.com",
+    "800-282-7300",
+    "Enterprise Report"
+  ],
+  "required_fields": [
+    "WBC",
+    "RBC",
+    "Hemoglobin",
+    "Hematocrit",
+    "Platelets",
+    "MCV",
+    "MCH",
+    "MCHC"
+  ],
+  "layout_signature": {
+    "columns": 6,
+    "column_headers": ["TESTS", "RESULT", "FLAG", "UNITS", "REFERENCE INTERVAL", "LAB"],
+    "has_reference_range": true,
+    "has_abnormal_flags": true,
+    "flag_in_result_column": false,
+    "typical_row_count": 21
+  },
+  "metadata_fields": {
+    "patient_name": {
+      "label_patterns": ["Patient:", "Patient Name:", "Name:"],
+      "location": "header",
+      "page": 1
+    },
+    "patient_dob": {
+      "label_patterns": ["DOB:", "Date of Birth:", "Birth Date:", "D.O.B.:"],
+      "location": "header",
+      "page": 1
+    },
+    "patient_id": {
+      "label_patterns": ["Patient ID:", "Acct#:", "Account#:", "MRN:"],
+      "location": "header",
+      "page": 1
+    },
+    "patient_sex": {
+      "label_patterns": ["Sex:", "Gender:"],
+      "location": "header",
+      "page": 1
+    },
+    "patient_age": {
+      "label_patterns": ["Age:"],
+      "location": "header",
+      "page": 1
+    },
+    "ordering_physician": {
+      "label_patterns": ["Ordering Physician:", "Physician:", "Provider:", "Ordered By:"],
+      "location": "header",
+      "page": 1
+    },
+    "accession_number": {
+      "label_patterns": ["Accession#:", "Specimen ID:", "Lab ID:"],
+      "location": "header",
+      "page": 1
+    },
+    "collection_date": {
+      "label_patterns": ["Collected:", "Collection Date:", "Specimen Collected:"],
+      "location": "header",
+      "page": 1
+    },
+    "received_date": {
+      "label_patterns": ["Received:", "Date Received:"],
+      "location": "header",
+      "page": 1
+    },
+    "report_date": {
+      "label_patterns": ["Reported:", "Report Date:", "Final:"],
+      "location": "footer",
+      "page": "last"
+    },
+    "lab_director": {
+      "label_patterns": ["Medical Director:", "Lab Director:", "Pathologist:"],
+      "location": "footer",
+      "page": "last"
+    },
+    "performing_lab": {
+      "value": "LabCorp",
+      "clia_pattern": "CLIA NO\\.?:?\\s*(\\d{2}D?\\d{7})",
+      "location": "header"
+    },
+    "specimen_type": {
+      "label_patterns": ["Specimen:", "Specimen Type:", "Source:"],
+      "location": "header",
+      "page": 1
+    },
+    "fasting_status": {
+      "label_patterns": ["Fasting:", "Fasting Status:"],
+      "location": "header",
+      "page": 1
+    }
+  },
+  "field_mappings": {
+    "wbc": {
+      "pdf_name": "WBC",
+      "aliases": ["White Blood Cell", "White Blood Cell Count", "White Blood Cells", "Leukocytes", "WBC Count"],
+      "loinc_code": "6690-2",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [3.4, 10.8]
+    },
+    "rbc": {
+      "pdf_name": "RBC",
+      "aliases": ["Red Blood Cell", "Red Blood Cell Count", "Red Blood Cells", "Erythrocytes", "RBC Count"],
+      "loinc_code": "789-8",
+      "unit": "x10E6/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [4.14, 5.80]
+    },
+    "hemoglobin": {
+      "pdf_name": "Hemoglobin",
+      "aliases": ["Hgb", "Hb", "HGB"],
+      "loinc_code": "718-7",
+      "unit": "g/dL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [13.0, 17.7]
+    },
+    "hematocrit": {
+      "pdf_name": "Hematocrit",
+      "aliases": ["Hct", "HCT", "Packed Cell Volume", "PCV"],
+      "loinc_code": "4544-3",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [37.5, 51.0]
+    },
+    "mcv": {
+      "pdf_name": "MCV",
+      "aliases": ["Mean Corpuscular Volume", "Mean Cell Volume"],
+      "loinc_code": "787-2",
+      "unit": "fL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [79, 97]
+    },
+    "mch": {
+      "pdf_name": "MCH",
+      "aliases": ["Mean Corpuscular Hemoglobin", "Mean Cell Hemoglobin"],
+      "loinc_code": "785-6",
+      "unit": "pg",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [26.6, 33.0]
+    },
+    "mchc": {
+      "pdf_name": "MCHC",
+      "aliases": ["Mean Corpuscular Hemoglobin Concentration", "Mean Cell Hgb Conc"],
+      "loinc_code": "786-4",
+      "unit": "g/dL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [31.5, 35.7]
+    },
+    "rdw": {
+      "pdf_name": "RDW",
+      "aliases": ["Red Cell Distribution Width", "RDW-CV", "RDW CV"],
+      "loinc_code": "788-0",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [11.6, 15.4]
+    },
+    "platelets": {
+      "pdf_name": "Platelets",
+      "aliases": ["Platelet Count", "PLT", "Thrombocytes"],
+      "loinc_code": "777-3",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [150, 450]
+    },
+    "neutrophils_percent": {
+      "pdf_name": "Neutrophils",
+      "aliases": ["Neutrophils %", "Neut %", "Neuts", "Segs", "Segmented Neutrophils", "Polys"],
+      "loinc_code": "770-8",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [40, 74]
+    },
+    "lymphocytes_percent": {
+      "pdf_name": "Lymphs",
+      "aliases": ["Lymphocytes", "Lymphocytes %", "Lymph %"],
+      "loinc_code": "736-9",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [14, 46]
+    },
+    "monocytes_percent": {
+      "pdf_name": "Monocytes",
+      "aliases": ["Monos", "Monocytes %", "Mono %"],
+      "loinc_code": "5905-5",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [4, 12]
+    },
+    "eosinophils_percent": {
+      "pdf_name": "Eos",
+      "aliases": ["Eosinophils", "Eosinophils %", "Eo %"],
+      "loinc_code": "713-8",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [0, 6]
+    },
+    "basophils_percent": {
+      "pdf_name": "Basos",
+      "aliases": ["Basophils", "Basophils %", "Baso %"],
+      "loinc_code": "706-2",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [0, 2]
+    },
+    "neutrophils_absolute": {
+      "pdf_name": "Neutrophils (Absolute)",
+      "aliases": ["Absolute Neutrophils", "ANC", "Neut Abs", "Neutrophils Abs"],
+      "loinc_code": "751-8",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [1.4, 7.0]
+    },
+    "lymphocytes_absolute": {
+      "pdf_name": "Lymphs (Absolute)",
+      "aliases": ["Lymphocytes (Absolute)", "Absolute Lymphocytes", "ALC", "Lymph Abs"],
+      "loinc_code": "731-0",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [0.7, 3.1]
+    },
+    "monocytes_absolute": {
+      "pdf_name": "Monocytes(Absolute)",
+      "aliases": ["Monocytes (Absolute)", "Absolute Monocytes", "AMC", "Mono Abs"],
+      "loinc_code": "742-7",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [0.1, 0.9]
+    },
+    "eosinophils_absolute": {
+      "pdf_name": "Eos (Absolute)",
+      "aliases": ["Eosinophils (Absolute)", "Absolute Eosinophils", "AEC", "Eos Abs"],
+      "loinc_code": "711-2",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [0.0, 0.4]
+    },
+    "basophils_absolute": {
+      "pdf_name": "Baso (Absolute)",
+      "aliases": ["Basophils (Absolute)", "Absolute Basophils", "ABC", "Baso Abs"],
+      "loinc_code": "704-7",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [0.0, 0.2]
+    },
+    "immature_granulocytes_percent": {
+      "pdf_name": "Immature Granulocytes",
+      "aliases": ["Immature Grans", "IG", "IG %", "Bands"],
+      "loinc_code": "71695-1",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [0, 1]
+    },
+    "immature_granulocytes_absolute": {
+      "pdf_name": "Immature Grans (Abs)",
+      "aliases": ["Immature Grans (Absolute)", "IG Absolute", "Abs IG"],
+      "loinc_code": "53115-2",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [0.0, 0.1]
+    }
+  },
+  "extraction_notes": [
+    "LabCorp Enterprise Report format: TESTS | RESULT | FLAG | UNITS | REFERENCE INTERVAL | LAB",
+    "Column indices: value=1, flag=2, unit=3, ref_range=4",
+    "Differential includes both % and absolute counts",
+    "Flag column may be blank for normal values (H=High, L=Low)",
+    "LabCorp uses abbreviated names: Lymphs, Eos, Basos (not Lymphocytes, Eosinophils, Basophils)",
+    "Total expected fields: 21 (9 CBC core + 10 differential + 2 immature grans)"
+  ]
+}

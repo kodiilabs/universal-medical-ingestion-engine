@@ -1,0 +1,323 @@
+{
+  "hemoglobin": {
+    "g/dL": {
+      "g/L": 10.0,
+      "mmol/L": 0.6206
+    },
+    "g/L": {
+      "g/dL": 0.1,
+      "mmol/L": 0.06206
+    },
+    "mmol/L": {
+      "g/dL": 1.611,
+      "g/L": 16.11
+    }
+  },
+  "hematocrit": {
+    "%": {
+      "L/L": 0.01
+    },
+    "L/L": {
+      "%": 100.0
+    }
+  },
+  "glucose": {
+    "mg/dL": {
+      "mmol/L": 0.0555
+    },
+    "mmol/L": {
+      "mg/dL": 18.018
+    }
+  },
+  "creatinine": {
+    "mg/dL": {
+      "umol/L": 88.42
+    },
+    "umol/L": {
+      "mg/dL": 0.0113
+    }
+  },
+  "bun": {
+    "mg/dL": {
+      "mmol/L": 0.357
+    },
+    "mmol/L": {
+      "mg/dL": 2.801
+    }
+  },
+  "calcium": {
+    "mg/dL": {
+      "mmol/L": 0.2495
+    },
+    "mmol/L": {
+      "mg/dL": 4.008
+    }
+  },
+  "total_cholesterol": {
+    "mg/dL": {
+      "mmol/L": 0.02586
+    },
+    "mmol/L": {
+      "mg/dL": 38.67
+    }
+  },
+  "hdl": {
+    "mg/dL": {
+      "mmol/L": 0.02586
+    },
+    "mmol/L": {
+      "mg/dL": 38.67
+    }
+  },
+  "ldl": {
+    "mg/dL": {
+      "mmol/L": 0.02586
+    },
+    "mmol/L": {
+      "mg/dL": 38.67
+    }
+  },
+  "triglycerides": {
+    "mg/dL": {
+      "mmol/L": 0.01129
+    },
+    "mmol/L": {
+      "mg/dL": 88.57
+    }
+  },
+  "total_bilirubin": {
+    "mg/dL": {
+      "umol/L": 17.1
+    },
+    "umol/L": {
+      "mg/dL": 0.0585
+    }
+  },
+  "albumin": {
+    "g/dL": {
+      "g/L": 10.0
+    },
+    "g/L": {
+      "g/dL": 0.1
+    }
+  },
+  "sodium": {
+    "mmol/L": {
+      "mEq/L": 1.0
+    },
+    "mEq/L": {
+      "mmol/L": 1.0
+    }
+  },
+  "potassium": {
+    "mmol/L": {
+      "mEq/L": 1.0
+    },
+    "mEq/L": {
+      "mmol/L": 1.0
+    }
+  },
+  "chloride": {
+    "mmol/L": {
+      "mEq/L": 1.0
+    },
+    "mEq/L": {
+      "mmol/L": 1.0
+    }
+  },
+  "co2": {
+    "mmol/L": {
+      "mEq/L": 1.0
+    },
+    "mEq/L": {
+      "mmol/L": 1.0
+    }
+  },
+  "magnesium": {
+    "mg/dL": {
+      "mmol/L": 0.4114
+    },
+    "mmol/L": {
+      "mg/dL": 2.431
+    },
+    "mEq/L": {
+      "mmol/L": 0.5
+    }
+  },
+  "phosphorus": {
+    "mg/dL": {
+      "mmol/L": 0.3229
+    },
+    "mmol/L": {
+      "mg/dL": 3.097
+    }
+  },
+  "uric_acid": {
+    "mg/dL": {
+      "umol/L": 59.48
+    },
+    "umol/L": {
+      "mg/dL": 0.0168
+    }
+  },
+  "wbc": {
+    "K/uL": {
+      "10^9/L": 1.0,
+      "cells/uL": 1000.0
+    },
+    "10^9/L": {
+      "K/uL": 1.0,
+      "cells/uL": 1000.0
+    },
+    "cells/uL": {
+      "K/uL": 0.001,
+      "10^9/L": 0.001
+    }
+  },
+  "platelets": {
+    "K/uL": {
+      "10^9/L": 1.0,
+      "cells/uL": 1000.0
+    },
+    "10^9/L": {
+      "K/uL": 1.0,
+      "cells/uL": 1000.0
+    },
+    "cells/uL": {
+      "K/uL": 0.001,
+      "10^9/L": 0.001
+    }
+  },
+  "rbc": {
+    "M/uL": {
+      "10^12/L": 1.0,
+      "cells/uL": 1000000.0
+    },
+    "10^12/L": {
+      "M/uL": 1.0,
+      "cells/uL": 1000000.0
+    },
+    "cells/uL": {
+      "M/uL": 0.000001,
+      "10^12/L": 0.000001
+    }
+  },
+  "alt": {
+    "U/L": {
+      "IU/L": 1.0
+    },
+    "IU/L": {
+      "U/L": 1.0
+    }
+  },
+  "ast": {
+    "U/L": {
+      "IU/L": 1.0
+    },
+    "IU/L": {
+      "U/L": 1.0
+    }
+  },
+  "alkaline_phosphatase": {
+    "U/L": {
+      "IU/L": 1.0
+    },
+    "IU/L": {
+      "U/L": 1.0
+    }
+  },
+  "tsh": {
+    "mIU/L": {
+      "uIU/mL": 1.0
+    },
+    "uIU/mL": {
+      "mIU/L": 1.0
+    }
+  },
+  "free_t4": {
+    "ng/dL": {
+      "pmol/L": 12.87
+    },
+    "pmol/L": {
+      "ng/dL": 0.0777
+    }
+  },
+  "free_t3": {
+    "pg/mL": {
+      "pmol/L": 1.536
+    },
+    "pmol/L": {
+      "pg/mL": 0.651
+    }
+  },
+  "vitamin_d": {
+    "ng/mL": {
+      "nmol/L": 2.496
+    },
+    "nmol/L": {
+      "ng/mL": 0.4006
+    }
+  },
+  "vitamin_b12": {
+    "pg/mL": {
+      "pmol/L": 0.7378
+    },
+    "pmol/L": {
+      "pg/mL": 1.355
+    }
+  },
+  "folate": {
+    "ng/mL": {
+      "nmol/L": 2.266
+    },
+    "nmol/L": {
+      "ng/mL": 0.4413
+    }
+  },
+  "ferritin": {
+    "ng/mL": {
+      "ug/L": 1.0,
+      "pmol/L": 2.247
+    },
+    "ug/L": {
+      "ng/mL": 1.0,
+      "pmol/L": 2.247
+    },
+    "pmol/L": {
+      "ng/mL": 0.445,
+      "ug/L": 0.445
+    }
+  },
+  "cortisol": {
+    "ug/dL": {
+      "nmol/L": 27.59
+    },
+    "nmol/L": {
+      "ug/dL": 0.0362
+    }
+  },
+  "testosterone": {
+    "ng/dL": {
+      "nmol/L": 0.0347
+    },
+    "nmol/L": {
+      "ng/dL": 28.82
+    }
+  },
+  "psa": {
+    "ng/mL": {
+      "ug/L": 1.0
+    },
+    "ug/L": {
+      "ng/mL": 1.0
+    }
+  },
+  "hba1c": {
+    "%": {
+      "mmol/mol": 10.93
+    },
+    "mmol/mol": {
+      "%": 0.0915
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "_comment": "Common test name aliases used across all lab templates. Import these into individual templates.",
+  "version": 1,
+  "last_updated": "2026-01-28",
+
+  "cbc_aliases": {
+    "wbc": ["WBC", "White Blood Cell", "White Blood Cell Count", "White Blood Cells", "Leukocytes", "WBC Count"],
+    "rbc": ["RBC", "Red Blood Cell", "Red Blood Cell Count", "Red Blood Cells", "Erythrocytes", "RBC Count"],
+    "hemoglobin": ["Hemoglobin", "Hgb", "Hb", "HGB"],
+    "hematocrit": ["Hematocrit", "Hct", "HCT", "Packed Cell Volume", "PCV"],
+    "mcv": ["MCV", "Mean Corpuscular Volume", "Mean Cell Volume"],
+    "mch": ["MCH", "Mean Corpuscular Hemoglobin", "Mean Cell Hemoglobin"],
+    "mchc": ["MCHC", "Mean Corpuscular Hemoglobin Concentration", "Mean Cell Hgb Conc"],
+    "rdw": ["RDW", "Red Cell Distribution Width", "RDW-CV", "RDW CV"],
+    "rdw_sd": ["RDW-SD", "RDW SD"],
+    "platelets": ["Platelets", "Platelet Count", "PLT", "Thrombocytes"],
+    "mpv": ["MPV", "Mean Platelet Volume"]
+  },
+
+  "differential_percent_aliases": {
+    "neutrophils_percent": ["Neutrophils", "Neutrophils %", "Neut %", "Neuts", "Segs", "Segmented Neutrophils", "Polys"],
+    "lymphocytes_percent": ["Lymphocytes", "Lymphs", "Lymphocytes %", "Lymph %"],
+    "monocytes_percent": ["Monocytes", "Monos", "Monocytes %", "Mono %"],
+    "eosinophils_percent": ["Eosinophils", "Eos", "Eosinophils %", "Eo %"],
+    "basophils_percent": ["Basophils", "Basos", "Basophils %", "Baso %"],
+    "immature_granulocytes_percent": ["Immature Granulocytes", "Immature Grans", "IG", "IG %", "Bands"]
+  },
+
+  "differential_absolute_aliases": {
+    "neutrophils_absolute": ["Neutrophils (Absolute)", "Absolute Neutrophils", "ANC", "Neut Abs", "Neutrophils Abs"],
+    "lymphocytes_absolute": ["Lymphocytes (Absolute)", "Lymphs (Absolute)", "Absolute Lymphocytes", "ALC", "Lymph Abs"],
+    "monocytes_absolute": ["Monocytes (Absolute)", "Monocytes(Absolute)", "Absolute Monocytes", "AMC", "Mono Abs"],
+    "eosinophils_absolute": ["Eosinophils (Absolute)", "Eos (Absolute)", "Absolute Eosinophils", "AEC", "Eos Abs"],
+    "basophils_absolute": ["Basophils (Absolute)", "Baso (Absolute)", "Absolute Basophils", "ABC", "Baso Abs"],
+    "immature_granulocytes_absolute": ["Immature Grans (Abs)", "Immature Grans (Absolute)", "IG Absolute", "Abs IG"]
+  },
+
+  "cd4_cd8_aliases": {
+    "absolute_cd4": ["Absolute CD 4 Helper", "Abs CD4", "CD4 Absolute", "CD4 Helper", "Absolute CD 4", "CD4 Count", "T4 Count", "T Helper"],
+    "cd4_percent": ["% CD 4 Pos. Lymph", "CD4%", "CD4 Percent", "% CD4", "% CD 4 Pos", "CD4 %"],
+    "absolute_cd8": ["Abs. CD 8 Suppressor", "Abs CD8", "CD8 Absolute", "CD8 Suppressor", "Abs. CD 8", "CD8 Count", "T8 Count", "T Suppressor"],
+    "cd8_percent": ["% CD 8 Pos. Lymph", "CD8%", "CD8 Percent", "% CD8", "% CD 8 Pos", "CD8 %"],
+    "cd4_cd8_ratio": ["CD4/CD8 Ratio", "CD4:CD8", "T4/T8 Ratio", "CD4/CD8", "CD4 CD8 Ratio", "CD4:CD8 Ratio", "Helper/Suppressor Ratio", "CD 4/CD 8 Ratio", "CD 4 / CD 8", "T4:T8 Ratio"]
+  },
+
+  "cmp_aliases": {
+    "glucose": ["Glucose", "Glucose, Serum", "Blood Glucose", "Fasting Glucose", "Random Glucose", "Glucose Level"],
+    "bun": ["BUN", "Blood Urea Nitrogen", "Urea Nitrogen", "Urea"],
+    "creatinine": ["Creatinine", "Creat", "Serum Creatinine", "Creatinine, Serum"],
+    "egfr": ["eGFR", "GFR", "Estimated GFR", "Glomerular Filtration Rate", "eGFR Non-Afr American", "eGFR African American"],
+    "bun_creatinine_ratio": ["BUN/Creatinine Ratio", "BUN/Creat Ratio", "BUN:Creatinine"],
+    "sodium": ["Sodium", "Na", "Sodium, Serum", "Na+"],
+    "potassium": ["Potassium", "K", "Potassium, Serum", "K+"],
+    "chloride": ["Chloride", "Cl", "Chloride, Serum", "Cl-"],
+    "carbon_dioxide": ["CO2", "Carbon Dioxide", "Total CO2", "Bicarbonate", "HCO3", "TCO2"],
+    "calcium": ["Calcium", "Ca", "Calcium, Serum", "Total Calcium"],
+    "total_protein": ["Total Protein", "Protein, Total", "TP"],
+    "albumin": ["Albumin", "Alb", "Serum Albumin"],
+    "globulin": ["Globulin", "Glob", "Total Globulin"],
+    "ag_ratio": ["A/G Ratio", "Albumin/Globulin Ratio", "A:G Ratio"],
+    "bilirubin_total": ["Bilirubin, Total", "Total Bilirubin", "T Bili", "TBIL"],
+    "alkaline_phosphatase": ["Alkaline Phosphatase", "Alk Phos", "ALP", "Alk Phosphatase"],
+    "ast": ["AST", "SGOT", "Aspartate Aminotransferase", "AST (SGOT)"],
+    "alt": ["ALT", "SGPT", "Alanine Aminotransferase", "ALT (SGPT)"]
+  },
+
+  "lipid_aliases": {
+    "cholesterol_total": ["Cholesterol, Total", "Total Cholesterol", "Cholesterol", "TC"],
+    "triglycerides": ["Triglycerides", "Trig", "TG", "Triglyceride"],
+    "hdl": ["HDL Cholesterol", "HDL", "HDL-C", "High Density Lipoprotein"],
+    "vldl": ["VLDL Cholesterol", "VLDL", "VLDL-C", "Very Low Density Lipoprotein"],
+    "ldl": ["LDL Cholesterol", "LDL", "LDL-C", "Low Density Lipoprotein", "LDL Calculated", "LDL Cholesterol Calc"],
+    "total_hdl_ratio": ["Total/HDL Ratio", "Cholesterol/HDL Ratio", "TC/HDL", "Chol/HDL Ratio"],
+    "non_hdl_cholesterol": ["Non-HDL Cholesterol", "Non HDL Cholesterol", "Non-HDL-C"]
+  },
+
+  "thyroid_aliases": {
+    "tsh": ["TSH", "Thyroid Stimulating Hormone", "Thyrotropin", "TSH 3rd Generation"],
+    "t4_free": ["Free T4", "FT4", "T4, Free", "Thyroxine Free", "Free Thyroxine"],
+    "t4_total": ["T4", "T4, Total", "Thyroxine", "Total T4", "Thyroxine Total"],
+    "t3_free": ["Free T3", "FT3", "T3, Free", "Triiodothyronine Free"],
+    "t3_total": ["T3", "T3, Total", "Triiodothyronine", "Total T3"],
+    "t3_uptake": ["T3 Uptake", "T3U", "T3 Resin Uptake"],
+    "free_thyroxine_index": ["Free Thyroxine Index", "FTI", "T7"]
+  },
+
+  "liver_aliases": {
+    "ast": ["AST", "SGOT", "Aspartate Aminotransferase", "AST (SGOT)"],
+    "alt": ["ALT", "SGPT", "Alanine Aminotransferase", "ALT (SGPT)"],
+    "alkaline_phosphatase": ["Alkaline Phosphatase", "Alk Phos", "ALP", "Alk Phosphatase"],
+    "bilirubin_total": ["Bilirubin, Total", "Total Bilirubin", "T Bili", "TBIL"],
+    "bilirubin_direct": ["Bilirubin, Direct", "Direct Bilirubin", "D Bili", "Conjugated Bilirubin"],
+    "bilirubin_indirect": ["Bilirubin, Indirect", "Indirect Bilirubin", "Unconjugated Bilirubin"],
+    "ggt": ["GGT", "Gamma GT", "Gamma-Glutamyl Transferase", "GGTP"],
+    "total_protein": ["Total Protein", "Protein, Total", "TP"],
+    "albumin": ["Albumin", "Alb", "Serum Albumin"],
+    "globulin": ["Globulin", "Glob", "Total Globulin"]
+  },
+
+  "coagulation_aliases": {
+    "pt": ["PT", "Prothrombin Time", "Pro Time"],
+    "inr": ["INR", "International Normalized Ratio", "PT/INR"],
+    "ptt": ["PTT", "Partial Thromboplastin Time", "aPTT", "Activated PTT"],
+    "fibrinogen": ["Fibrinogen", "Fibrinogen Activity"],
+    "d_dimer": ["D-Dimer", "D Dimer", "Fibrin Degradation Products"]
+  }
+}

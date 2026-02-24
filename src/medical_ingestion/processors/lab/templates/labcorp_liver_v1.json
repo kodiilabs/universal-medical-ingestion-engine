@@ -1,0 +1,147 @@
+{
+  "id": "labcorp_liver_v2",
+  "vendor": "LabCorp",
+  "test_type": "liver_panel",
+  "version": 2,
+  "description": "LabCorp Liver Function Tests (AST, ALT, ALP, Bilirubin, Albumin)",
+  "header_pattern": "LabCorp.*Liver|Liver Panel",
+  "vendor_markers": [
+    "LabCorp",
+    "www.labcorp.com",
+    "Laboratory Corporation of America"
+  ],
+  "required_fields": [
+    "AST",
+    "ALT",
+    "Alkaline Phosphatase",
+    "Total Bilirubin",
+    "Albumin"
+  ],
+  "layout_signature": {
+    "columns": 5,
+    "has_reference_range": true,
+    "has_abnormal_flags": true,
+    "typical_row_count": 6,
+    "column_headers": null,
+    "flag_in_result_column": false
+  },
+  "field_mappings": {
+    "ast": {
+      "pdf_name": "AST (SGOT)",
+      "aliases": ["AST", "SGOT", "Aspartate Aminotransferase", "AST (SGOT)"],
+      "loinc_code": "1920-8",
+      "unit": "IU/L",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        40
+      ]
+    },
+    "alt": {
+      "pdf_name": "ALT (SGPT)",
+      "aliases": ["ALT", "SGPT", "Alanine Aminotransferase", "ALT (SGPT)"],
+      "loinc_code": "1742-6",
+      "unit": "IU/L",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        44
+      ]
+    },
+    "alkaline_phosphatase": {
+      "pdf_name": "Alkaline Phosphatase",
+      "aliases": ["Alkaline Phosphatase", "Alk Phos", "ALP"],
+      "loinc_code": "6768-6",
+      "unit": "IU/L",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        39,
+        117
+      ]
+    },
+    "bilirubin_total": {
+      "pdf_name": "Bilirubin, Total",
+      "aliases": ["Bilirubin, Total", "Total Bilirubin", "T Bili", "TBIL"],
+      "loinc_code": "1975-2",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0.0,
+        1.2
+      ]
+    },
+    "bilirubin_direct": {
+      "pdf_name": "Bilirubin, Direct",
+      "aliases": ["Bilirubin, Direct", "Direct Bilirubin", "D Bili"],
+      "loinc_code": "1968-7",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0.0,
+        0.3
+      ]
+    },
+    "ggt": {
+      "pdf_name": "GGT",
+      "aliases": ["GGT", "Gamma GT", "Gamma-Glutamyl Transferase", "GGTP"],
+      "loinc_code": "2324-2",
+      "unit": "IU/L",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        65
+      ]
+    },
+    "total_protein": {
+      "pdf_name": "Total Protein",
+      "aliases": ["Total Protein", "Protein, Total", "TP"],
+      "loinc_code": "2885-2",
+      "unit": "g/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        6.0,
+        8.3
+      ]
+    },
+    "albumin": {
+      "pdf_name": "Albumin",
+      "aliases": ["Albumin", "Alb", "Serum Albumin"],
+      "loinc_code": "1751-7",
+      "unit": "g/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        3.5,
+        5.5
+      ]
+    }
+  },
+  "extraction_notes": [
+    "Liver panel usually organized in sections: AST/ALT first, then ALP, Bilirubin, Albumin",
+    "Flags: H = High, L = Low",
+    "Watch for comments about fasting or sample hemolysis"
+  ]
+}

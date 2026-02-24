@@ -1,0 +1,302 @@
+{
+  "id": "labcorp_cd4_cd8_v1",
+  "vendor": "LabCorp",
+  "test_type": "cd4_cd8_immunology",
+  "version": 2,
+  "description": "LabCorp CD4/CD8 Ratio Profile with CBC - Enterprise Report format",
+  "header_pattern": "CD4/CD8 Ratio Profile|CD4.*CD8.*Ratio",
+  "vendor_markers": [
+    "LabCorp",
+    "Laboratory Corporation of America",
+    "Labcorp Burlington",
+    "www.labcorp.com",
+    "Enterprise Report"
+  ],
+  "required_fields": [
+    "CD 4",
+    "CD 8",
+    "CD4/CD8 Ratio",
+    "WBC",
+    "RBC",
+    "Hemoglobin"
+  ],
+  "layout_signature": {
+    "columns": 5,
+    "column_headers": [
+      "Test",
+      "Current Result and Flag",
+      "Previous Result and Date",
+      "Units",
+      "Reference Interval"
+    ],
+    "has_reference_range": true,
+    "has_abnormal_flags": true,
+    "flag_in_result_column": true,
+    "typical_row_count": 26
+  },
+  "field_mappings": {
+    "absolute_cd4": {
+      "pdf_name": "Absolute CD 4 Helper",
+      "aliases": ["Abs CD4", "CD4 Absolute", "CD4 Helper", "Absolute CD 4", "CD4 Count", "T4 Count"],
+      "loinc_code": "24467-3",
+      "unit": "/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [359, 1519]
+    },
+    "cd4_percent": {
+      "pdf_name": "% CD 4 Pos. Lymph",
+      "aliases": ["CD4%", "CD4 Percent", "% CD4", "% CD 4 Pos", "CD4 %"],
+      "loinc_code": "8123-2",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [30.8, 58.5]
+    },
+    "absolute_cd8": {
+      "pdf_name": "Abs. CD 8 Suppressor",
+      "aliases": ["Abs CD8", "CD8 Absolute", "CD8 Suppressor", "Abs. CD 8", "CD8 Count", "T8 Count"],
+      "loinc_code": "8137-2",
+      "unit": "/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [109, 897]
+    },
+    "cd8_percent": {
+      "pdf_name": "% CD 8 Pos. Lymph",
+      "aliases": ["CD8%", "CD8 Percent", "% CD8", "% CD 8 Pos", "CD8 %"],
+      "loinc_code": "8101-8",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [12.0, 35.5]
+    },
+    "cd4_cd8_ratio": {
+      "pdf_name": "CD4/CD8 Ratio",
+      "aliases": ["CD4:CD8", "T4/T8 Ratio", "CD4/CD8", "CD4 CD8 Ratio", "CD4:CD8 Ratio", "Helper/Suppressor Ratio", "CD 4/CD 8 Ratio", "CD 4 / CD 8"],
+      "loinc_code": "54218-3",
+      "unit": "",
+      "value_column": 1,
+      "unit_column": null,
+      "ref_range_column": 4,
+      "typical_range": [0.92, 3.72]
+    },
+    "wbc": {
+      "pdf_name": "WBC",
+      "aliases": ["WBC", "White Blood Cell", "White Blood Cell Count", "White Blood Cells", "Leukocytes", "WBC Count"],
+      "loinc_code": "6690-2",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [3.4, 10.8]
+    },
+    "rbc": {
+      "pdf_name": "RBC",
+      "aliases": ["RBC", "Red Blood Cell", "Red Blood Cell Count", "Red Blood Cells", "Erythrocytes", "RBC Count"],
+      "loinc_code": "789-8",
+      "unit": "x10E6/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [3.77, 5.28]
+    },
+    "hemoglobin": {
+      "pdf_name": "Hemoglobin",
+      "aliases": ["Hemoglobin", "Hgb", "Hb", "HGB"],
+      "loinc_code": "718-7",
+      "unit": "g/dL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [11.1, 15.9]
+    },
+    "hematocrit": {
+      "pdf_name": "Hematocrit",
+      "aliases": ["Hematocrit", "Hct", "HCT", "Packed Cell Volume", "PCV"],
+      "loinc_code": "4544-3",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [34.0, 46.6]
+    },
+    "mcv": {
+      "pdf_name": "MCV",
+      "aliases": ["MCV", "Mean Corpuscular Volume", "Mean Cell Volume"],
+      "loinc_code": "787-2",
+      "unit": "fL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [79, 97]
+    },
+    "mch": {
+      "pdf_name": "MCH",
+      "aliases": ["MCH", "Mean Corpuscular Hemoglobin", "Mean Cell Hemoglobin"],
+      "loinc_code": "785-6",
+      "unit": "pg",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [26.6, 33.0]
+    },
+    "mchc": {
+      "pdf_name": "MCHC",
+      "aliases": ["MCHC", "Mean Corpuscular Hemoglobin Concentration", "Mean Cell Hgb Conc"],
+      "loinc_code": "786-4",
+      "unit": "g/dL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [31.5, 35.7]
+    },
+    "rdw": {
+      "pdf_name": "RDW",
+      "aliases": ["RDW", "Red Cell Distribution Width", "RDW-CV", "RDW CV"],
+      "loinc_code": "788-0",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [11.7, 15.4]
+    },
+    "platelets": {
+      "pdf_name": "Platelets",
+      "aliases": ["Platelets", "Platelet Count", "PLT", "Thrombocytes"],
+      "loinc_code": "777-3",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [150, 450]
+    },
+    "neutrophils_percent": {
+      "pdf_name": "Neutrophils",
+      "aliases": ["Neutrophils", "Neutrophils %", "Neut %", "Neuts", "Segs", "Segmented Neutrophils", "Polys"],
+      "loinc_code": "770-8",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4
+    },
+    "lymphocytes_percent": {
+      "pdf_name": "Lymphs",
+      "aliases": ["Lymphocytes", "Lymphs", "Lymphocytes %", "Lymph %"],
+      "loinc_code": "736-9",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4
+    },
+    "monocytes_percent": {
+      "pdf_name": "Monocytes",
+      "aliases": ["Monocytes", "Monos", "Monocytes %", "Mono %"],
+      "loinc_code": "5905-5",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4
+    },
+    "eosinophils_percent": {
+      "pdf_name": "Eos",
+      "aliases": ["Eosinophils", "Eos", "Eosinophils %", "Eo %"],
+      "loinc_code": "713-8",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4
+    },
+    "basophils_percent": {
+      "pdf_name": "Basos",
+      "aliases": ["Basophils", "Basos", "Basophils %", "Baso %"],
+      "loinc_code": "706-2",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4
+    },
+    "neutrophils_absolute": {
+      "pdf_name": "Neutrophils (Absolute)",
+      "aliases": ["Neutrophils (Absolute)", "Absolute Neutrophils", "ANC", "Neut Abs", "Neutrophils Abs"],
+      "loinc_code": "751-8",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [1.4, 7.0]
+    },
+    "lymphocytes_absolute": {
+      "pdf_name": "Lymphs (Absolute)",
+      "aliases": ["Lymphocytes (Absolute)", "Lymphs (Absolute)", "Absolute Lymphocytes", "ALC", "Lymph Abs"],
+      "loinc_code": "731-0",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [0.7, 3.1]
+    },
+    "monocytes_absolute": {
+      "pdf_name": "Monocytes(Absolute)",
+      "aliases": ["Monocytes (Absolute)", "Monocytes(Absolute)", "Absolute Monocytes", "AMC", "Mono Abs"],
+      "loinc_code": "742-7",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [0.1, 0.9]
+    },
+    "eosinophils_absolute": {
+      "pdf_name": "Eos (Absolute)",
+      "aliases": ["Eosinophils (Absolute)", "Eos (Absolute)", "Absolute Eosinophils", "AEC", "Eos Abs"],
+      "loinc_code": "711-2",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [0.0, 0.4]
+    },
+    "basophils_absolute": {
+      "pdf_name": "Baso (Absolute)",
+      "aliases": ["Basophils (Absolute)", "Baso (Absolute)", "Absolute Basophils", "ABC", "Baso Abs"],
+      "loinc_code": "704-7",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [0.0, 0.2]
+    },
+    "immature_granulocytes_percent": {
+      "pdf_name": "Immature Granulocytes",
+      "aliases": ["Immature Granulocytes", "Immature Grans", "IG", "IG %", "Bands"],
+      "loinc_code": "71695-1",
+      "unit": "%",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4
+    },
+    "immature_granulocytes_absolute": {
+      "pdf_name": "Immature Grans (Abs)",
+      "aliases": ["Immature Grans (Abs)", "Immature Grans (Absolute)", "IG Absolute", "Abs IG"],
+      "loinc_code": "53115-2",
+      "unit": "x10E3/uL",
+      "value_column": 1,
+      "unit_column": 3,
+      "ref_range_column": 4,
+      "typical_range": [0.0, 0.1]
+    }
+  },
+  "extraction_notes": [
+    "CD4/CD8 panels are commonly used for HIV monitoring and immune status assessment",
+    "Results often appear with both CBC and lymphocyte subset analysis",
+    "LabCorp Enterprise Report format has columns: Test | Current Result and Flag | Previous Result | Units | Reference Interval",
+    "Test names may include lab code suffix (e.g., 'WBC 02') - use partial matching",
+    "Flag (H/L/High/Low) may be embedded in the result column after the value",
+    "Reference ranges may show 'Not Estab.' for some tests",
+    "Total expected test count: 26 (5 CD4/CD8 + 9 CBC core + 10 differential + 2 immature grans)"
+  ]
+}

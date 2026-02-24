@@ -1,0 +1,468 @@
+{
+  "718-7": {
+    "name": "Hemoglobin",
+    "aliases": ["HGB", "Hb", "hemoglobin", "haemoglobin"],
+    "category": "hematology",
+    "panel": "CBC",
+    "standard_unit": "g/dL",
+    "alternate_units": ["g/L", "mmol/L"],
+    "reference_range": {
+      "male": {"low": 13.5, "high": 17.5, "unit": "g/dL"},
+      "female": {"low": 12.0, "high": 15.5, "unit": "g/dL"}
+    },
+    "critical_values": {
+      "low": 7.0,
+      "high": 20.0,
+      "unit": "g/dL"
+    }
+  },
+  "4544-3": {
+    "name": "Hematocrit",
+    "aliases": ["HCT", "Hct", "hematocrit", "haematocrit", "packed cell volume", "PCV"],
+    "category": "hematology",
+    "panel": "CBC",
+    "standard_unit": "%",
+    "alternate_units": ["L/L"],
+    "reference_range": {
+      "male": {"low": 38.8, "high": 50.0, "unit": "%"},
+      "female": {"low": 34.9, "high": 44.5, "unit": "%"}
+    },
+    "critical_values": {
+      "low": 20.0,
+      "high": 60.0,
+      "unit": "%"
+    }
+  },
+  "6690-2": {
+    "name": "White Blood Cells",
+    "aliases": ["WBC", "leukocytes", "white cells", "white count"],
+    "category": "hematology",
+    "panel": "CBC",
+    "standard_unit": "K/uL",
+    "alternate_units": ["10^9/L", "cells/uL"],
+    "reference_range": {
+      "adult": {"low": 4.5, "high": 11.0, "unit": "K/uL"}
+    },
+    "critical_values": {
+      "low": 2.0,
+      "high": 30.0,
+      "unit": "K/uL"
+    }
+  },
+  "777-3": {
+    "name": "Platelets",
+    "aliases": ["PLT", "thrombocytes", "platelet count"],
+    "category": "hematology",
+    "panel": "CBC",
+    "standard_unit": "K/uL",
+    "alternate_units": ["10^9/L", "cells/uL"],
+    "reference_range": {
+      "adult": {"low": 150, "high": 400, "unit": "K/uL"}
+    },
+    "critical_values": {
+      "low": 50,
+      "high": 1000,
+      "unit": "K/uL"
+    }
+  },
+  "789-8": {
+    "name": "Red Blood Cells",
+    "aliases": ["RBC", "erythrocytes", "red cells", "red count"],
+    "category": "hematology",
+    "panel": "CBC",
+    "standard_unit": "M/uL",
+    "alternate_units": ["10^12/L", "cells/uL"],
+    "reference_range": {
+      "male": {"low": 4.5, "high": 5.9, "unit": "M/uL"},
+      "female": {"low": 4.1, "high": 5.1, "unit": "M/uL"}
+    },
+    "critical_values": {
+      "low": 2.5,
+      "high": 7.0,
+      "unit": "M/uL"
+    }
+  },
+  "2345-7": {
+    "name": "Glucose",
+    "aliases": ["GLU", "blood glucose", "blood sugar", "fasting glucose"],
+    "category": "chemistry",
+    "panel": "CMP",
+    "standard_unit": "mg/dL",
+    "alternate_units": ["mmol/L"],
+    "reference_range": {
+      "fasting": {"low": 70, "high": 100, "unit": "mg/dL"},
+      "random": {"low": 70, "high": 140, "unit": "mg/dL"}
+    },
+    "critical_values": {
+      "low": 40,
+      "high": 500,
+      "unit": "mg/dL"
+    }
+  },
+  "2951-2": {
+    "name": "Sodium",
+    "aliases": ["Na", "sodium", "serum sodium"],
+    "category": "chemistry",
+    "panel": "CMP",
+    "standard_unit": "mmol/L",
+    "alternate_units": ["mEq/L"],
+    "reference_range": {
+      "adult": {"low": 136, "high": 145, "unit": "mmol/L"}
+    },
+    "critical_values": {
+      "low": 120,
+      "high": 160,
+      "unit": "mmol/L"
+    }
+  },
+  "2823-3": {
+    "name": "Potassium",
+    "aliases": ["K", "potassium", "serum potassium"],
+    "category": "chemistry",
+    "panel": "CMP",
+    "standard_unit": "mmol/L",
+    "alternate_units": ["mEq/L"],
+    "reference_range": {
+      "adult": {"low": 3.5, "high": 5.0, "unit": "mmol/L"}
+    },
+    "critical_values": {
+      "low": 2.5,
+      "high": 6.5,
+      "unit": "mmol/L"
+    }
+  },
+  "2075-0": {
+    "name": "Chloride",
+    "aliases": ["Cl", "chloride", "serum chloride"],
+    "category": "chemistry",
+    "panel": "CMP",
+    "standard_unit": "mmol/L",
+    "alternate_units": ["mEq/L"],
+    "reference_range": {
+      "adult": {"low": 98, "high": 107, "unit": "mmol/L"}
+    },
+    "critical_values": {
+      "low": 80,
+      "high": 120,
+      "unit": "mmol/L"
+    }
+  },
+  "2028-9": {
+    "name": "Carbon Dioxide",
+    "aliases": ["CO2", "bicarbonate", "total CO2", "HCO3"],
+    "category": "chemistry",
+    "panel": "CMP",
+    "standard_unit": "mmol/L",
+    "alternate_units": ["mEq/L"],
+    "reference_range": {
+      "adult": {"low": 23, "high": 29, "unit": "mmol/L"}
+    },
+    "critical_values": {
+      "low": 10,
+      "high": 40,
+      "unit": "mmol/L"
+    }
+  },
+  "3094-0": {
+    "name": "Blood Urea Nitrogen",
+    "aliases": ["BUN", "urea nitrogen", "blood urea", "urea"],
+    "category": "chemistry",
+    "panel": "CMP",
+    "standard_unit": "mg/dL",
+    "alternate_units": ["mmol/L"],
+    "reference_range": {
+      "adult": {"low": 7, "high": 20, "unit": "mg/dL"}
+    },
+    "critical_values": {
+      "low": 2,
+      "high": 100,
+      "unit": "mg/dL"
+    }
+  },
+  "2160-0": {
+    "name": "Creatinine",
+    "aliases": ["Cr", "creat", "creatinine", "serum creatinine"],
+    "category": "chemistry",
+    "panel": "CMP",
+    "standard_unit": "mg/dL",
+    "alternate_units": ["umol/L"],
+    "reference_range": {
+      "male": {"low": 0.7, "high": 1.3, "unit": "mg/dL"},
+      "female": {"low": 0.6, "high": 1.1, "unit": "mg/dL"}
+    },
+    "critical_values": {
+      "low": 0.3,
+      "high": 10.0,
+      "unit": "mg/dL"
+    }
+  },
+  "17861-6": {
+    "name": "Calcium",
+    "aliases": ["Ca", "calcium", "serum calcium", "total calcium"],
+    "category": "chemistry",
+    "panel": "CMP",
+    "standard_unit": "mg/dL",
+    "alternate_units": ["mmol/L"],
+    "reference_range": {
+      "adult": {"low": 8.5, "high": 10.2, "unit": "mg/dL"}
+    },
+    "critical_values": {
+      "low": 6.5,
+      "high": 13.0,
+      "unit": "mg/dL"
+    }
+  },
+  "1742-6": {
+    "name": "Alanine Aminotransferase",
+    "aliases": ["ALT", "SGPT", "alanine transaminase"],
+    "category": "liver",
+    "panel": "LFT",
+    "standard_unit": "U/L",
+    "alternate_units": ["IU/L"],
+    "reference_range": {
+      "male": {"low": 7, "high": 55, "unit": "U/L"},
+      "female": {"low": 7, "high": 45, "unit": "U/L"}
+    },
+    "critical_values": {
+      "low": null,
+      "high": 2000,
+      "unit": "U/L"
+    }
+  },
+  "1920-8": {
+    "name": "Aspartate Aminotransferase",
+    "aliases": ["AST", "SGOT", "aspartate transaminase"],
+    "category": "liver",
+    "panel": "LFT",
+    "standard_unit": "U/L",
+    "alternate_units": ["IU/L"],
+    "reference_range": {
+      "male": {"low": 8, "high": 48, "unit": "U/L"},
+      "female": {"low": 8, "high": 43, "unit": "U/L"}
+    },
+    "critical_values": {
+      "low": null,
+      "high": 2000,
+      "unit": "U/L"
+    }
+  },
+  "6768-6": {
+    "name": "Alkaline Phosphatase",
+    "aliases": ["ALP", "alk phos", "alkaline phos"],
+    "category": "liver",
+    "panel": "LFT",
+    "standard_unit": "U/L",
+    "alternate_units": ["IU/L"],
+    "reference_range": {
+      "adult": {"low": 44, "high": 147, "unit": "U/L"}
+    },
+    "critical_values": {
+      "low": null,
+      "high": 1000,
+      "unit": "U/L"
+    }
+  },
+  "1975-2": {
+    "name": "Total Bilirubin",
+    "aliases": ["bilirubin", "total bili", "TBIL"],
+    "category": "liver",
+    "panel": "LFT",
+    "standard_unit": "mg/dL",
+    "alternate_units": ["umol/L"],
+    "reference_range": {
+      "adult": {"low": 0.1, "high": 1.2, "unit": "mg/dL"}
+    },
+    "critical_values": {
+      "low": null,
+      "high": 15.0,
+      "unit": "mg/dL"
+    }
+  },
+  "1751-7": {
+    "name": "Albumin",
+    "aliases": ["ALB", "serum albumin"],
+    "category": "liver",
+    "panel": "LFT",
+    "standard_unit": "g/dL",
+    "alternate_units": ["g/L"],
+    "reference_range": {
+      "adult": {"low": 3.5, "high": 5.5, "unit": "g/dL"}
+    },
+    "critical_values": {
+      "low": 2.0,
+      "high": null,
+      "unit": "g/dL"
+    }
+  },
+  "2093-3": {
+    "name": "Total Cholesterol",
+    "aliases": ["cholesterol", "total chol", "CHOL"],
+    "category": "lipid",
+    "panel": "Lipid Panel",
+    "standard_unit": "mg/dL",
+    "alternate_units": ["mmol/L"],
+    "reference_range": {
+      "desirable": {"low": null, "high": 200, "unit": "mg/dL"},
+      "borderline": {"low": 200, "high": 239, "unit": "mg/dL"},
+      "high": {"low": 240, "high": null, "unit": "mg/dL"}
+    },
+    "critical_values": {
+      "low": null,
+      "high": 500,
+      "unit": "mg/dL"
+    }
+  },
+  "2085-9": {
+    "name": "HDL Cholesterol",
+    "aliases": ["HDL", "HDL-C", "good cholesterol", "high density lipoprotein"],
+    "category": "lipid",
+    "panel": "Lipid Panel",
+    "standard_unit": "mg/dL",
+    "alternate_units": ["mmol/L"],
+    "reference_range": {
+      "low_risk": {"low": 60, "high": null, "unit": "mg/dL"},
+      "high_risk": {"low": null, "high": 40, "unit": "mg/dL"}
+    },
+    "critical_values": {
+      "low": 20,
+      "high": null,
+      "unit": "mg/dL"
+    }
+  },
+  "2089-1": {
+    "name": "LDL Cholesterol",
+    "aliases": ["LDL", "LDL-C", "bad cholesterol", "low density lipoprotein"],
+    "category": "lipid",
+    "panel": "Lipid Panel",
+    "standard_unit": "mg/dL",
+    "alternate_units": ["mmol/L"],
+    "reference_range": {
+      "optimal": {"low": null, "high": 100, "unit": "mg/dL"},
+      "near_optimal": {"low": 100, "high": 129, "unit": "mg/dL"},
+      "borderline": {"low": 130, "high": 159, "unit": "mg/dL"},
+      "high": {"low": 160, "high": 189, "unit": "mg/dL"},
+      "very_high": {"low": 190, "high": null, "unit": "mg/dL"}
+    },
+    "critical_values": {
+      "low": null,
+      "high": 400,
+      "unit": "mg/dL"
+    }
+  },
+  "2571-8": {
+    "name": "Triglycerides",
+    "aliases": ["TRIG", "TG", "triglyceride"],
+    "category": "lipid",
+    "panel": "Lipid Panel",
+    "standard_unit": "mg/dL",
+    "alternate_units": ["mmol/L"],
+    "reference_range": {
+      "normal": {"low": null, "high": 150, "unit": "mg/dL"},
+      "borderline": {"low": 150, "high": 199, "unit": "mg/dL"},
+      "high": {"low": 200, "high": 499, "unit": "mg/dL"},
+      "very_high": {"low": 500, "high": null, "unit": "mg/dL"}
+    },
+    "critical_values": {
+      "low": null,
+      "high": 1000,
+      "unit": "mg/dL"
+    }
+  },
+  "3016-3": {
+    "name": "Thyroid Stimulating Hormone",
+    "aliases": ["TSH", "thyrotropin"],
+    "category": "thyroid",
+    "panel": "Thyroid Panel",
+    "standard_unit": "mIU/L",
+    "alternate_units": ["uIU/mL"],
+    "reference_range": {
+      "adult": {"low": 0.4, "high": 4.0, "unit": "mIU/L"}
+    },
+    "critical_values": {
+      "low": 0.01,
+      "high": 50.0,
+      "unit": "mIU/L"
+    }
+  },
+  "3024-7": {
+    "name": "Free Thyroxine",
+    "aliases": ["Free T4", "FT4", "thyroxine"],
+    "category": "thyroid",
+    "panel": "Thyroid Panel",
+    "standard_unit": "ng/dL",
+    "alternate_units": ["pmol/L"],
+    "reference_range": {
+      "adult": {"low": 0.8, "high": 1.8, "unit": "ng/dL"}
+    },
+    "critical_values": {
+      "low": 0.2,
+      "high": 5.0,
+      "unit": "ng/dL"
+    }
+  },
+  "3051-0": {
+    "name": "Free Triiodothyronine",
+    "aliases": ["Free T3", "FT3", "triiodothyronine"],
+    "category": "thyroid",
+    "panel": "Thyroid Panel",
+    "standard_unit": "pg/mL",
+    "alternate_units": ["pmol/L"],
+    "reference_range": {
+      "adult": {"low": 2.3, "high": 4.2, "unit": "pg/mL"}
+    },
+    "critical_values": {
+      "low": 1.0,
+      "high": 10.0,
+      "unit": "pg/mL"
+    }
+  },
+  "5902-2": {
+    "name": "Prothrombin Time",
+    "aliases": ["PT", "pro time", "protime"],
+    "category": "coagulation",
+    "panel": "Coagulation Panel",
+    "standard_unit": "sec",
+    "alternate_units": ["s"],
+    "reference_range": {
+      "adult": {"low": 11.0, "high": 13.5, "unit": "sec"}
+    },
+    "critical_values": {
+      "low": 8.0,
+      "high": 30.0,
+      "unit": "sec"
+    }
+  },
+  "6301-6": {
+    "name": "International Normalized Ratio",
+    "aliases": ["INR", "PT INR"],
+    "category": "coagulation",
+    "panel": "Coagulation Panel",
+    "standard_unit": "ratio",
+    "alternate_units": [],
+    "reference_range": {
+      "adult": {"low": 0.8, "high": 1.1, "unit": "ratio"},
+      "therapeutic": {"low": 2.0, "high": 3.0, "unit": "ratio"}
+    },
+    "critical_values": {
+      "low": null,
+      "high": 5.0,
+      "unit": "ratio"
+    }
+  },
+  "3173-2": {
+    "name": "Partial Thromboplastin Time",
+    "aliases": ["PTT", "aPTT", "activated PTT"],
+    "category": "coagulation",
+    "panel": "Coagulation Panel",
+    "standard_unit": "sec",
+    "alternate_units": ["s"],
+    "reference_range": {
+      "adult": {"low": 25.0, "high": 35.0, "unit": "sec"}
+    },
+    "critical_values": {
+      "low": 20.0,
+      "high": 70.0,
+      "unit": "sec"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "quest_thyroid_v2",
+  "vendor": "Quest Diagnostics",
+  "test_type": "thyroid_panel",
+  "version": 2,
+  "description": "Quest Diagnostics Thyroid Panel",
+  "header_pattern": "Quest.*Thyroid|Thyroid Panel",
+  "vendor_markers": [
+    "Quest Diagnostics",
+    "www.questdiagnostics.com",
+    "QuestDiagnostics.com"
+  ],
+  "required_fields": [
+    "TSH",
+    "Free T4",
+    "Free T3"
+  ],
+  "layout_signature": {
+    "columns": 5,
+    "has_reference_range": true,
+    "has_abnormal_flags": true,
+    "typical_row_count": 5,
+    "column_headers": null,
+    "flag_in_result_column": false
+  },
+  "field_mappings": {
+    "tsh": {
+      "pdf_name": "TSH",
+      "aliases": ["Thyroid Stimulating Hormone", "Thyrotropin", "TSH 3rd Gen", "TSH, 3rd Generation", "Serum TSH"],
+      "loinc_code": "3016-3",
+      "unit": "uIU/mL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0.4,
+        4.0
+      ]
+    },
+    "free_t4": {
+      "pdf_name": "Free T4",
+      "aliases": ["FT4", "Free Thyroxine", "Thyroxine Free", "T4 Free", "Serum Free T4"],
+      "loinc_code": "3027-0",
+      "unit": "ng/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0.8,
+        1.8
+      ]
+    },
+    "free_t3": {
+      "pdf_name": "Free T3",
+      "aliases": ["FT3", "Free Triiodothyronine", "Triiodothyronine Free", "T3 Free", "Serum Free T3"],
+      "loinc_code": "3051-3",
+      "unit": "pg/mL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        2.3,
+        4.2
+      ]
+    }
+  },
+  "extraction_notes": [
+    "TSH usually first row",
+    "Flags: H = High, L = Low",
+    "Check for pregnancy or age-specific reference ranges"
+  ]
+}

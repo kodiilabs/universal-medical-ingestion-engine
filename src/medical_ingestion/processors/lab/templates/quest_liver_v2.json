@@ -1,0 +1,105 @@
+{
+  "id": "quest_liver_v2",
+  "vendor": "Quest Diagnostics",
+  "test_type": "liver_panel",
+  "version": 2,
+  "description": "Quest Diagnostics Liver Function Tests",
+  "header_pattern": "Quest.*Liver|Liver Panel",
+  "vendor_markers": [
+    "Quest Diagnostics",
+    "www.questdiagnostics.com",
+    "QuestDiagnostics.com"
+  ],
+  "required_fields": [
+    "AST",
+    "ALT",
+    "Alkaline Phosphatase",
+    "Total Bilirubin",
+    "Albumin"
+  ],
+  "layout_signature": {
+    "columns": 5,
+    "has_reference_range": true,
+    "has_abnormal_flags": true,
+    "typical_row_count": 6,
+    "column_headers": null,
+    "flag_in_result_column": false
+  },
+  "field_mappings": {
+    "ast": {
+      "pdf_name": "AST (SGOT)",
+      "aliases": ["AST", "SGOT", "Aspartate Aminotransferase", "Serum AST", "AST/SGOT"],
+      "loinc_code": "1920-8",
+      "unit": "IU/L",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        40
+      ]
+    },
+    "alt": {
+      "pdf_name": "ALT (SGPT)",
+      "aliases": ["ALT", "SGPT", "Alanine Aminotransferase", "Serum ALT", "ALT/SGPT"],
+      "loinc_code": "1742-6",
+      "unit": "IU/L",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        44
+      ]
+    },
+    "alkaline_phosphatase": {
+      "pdf_name": "Alkaline Phosphatase",
+      "aliases": ["ALP", "Alk Phos", "Alk. Phos.", "Alkaline Phos", "Serum Alkaline Phosphatase"],
+      "loinc_code": "6768-6",
+      "unit": "IU/L",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        39,
+        117
+      ]
+    },
+    "total_bilirubin": {
+      "pdf_name": "Bilirubin, Total",
+      "aliases": ["Total Bilirubin", "T. Bili", "TBili", "Bilirubin Total", "Serum Bilirubin"],
+      "loinc_code": "1975-2",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0.0,
+        1.2
+      ]
+    },
+    "albumin": {
+      "pdf_name": "Albumin",
+      "aliases": ["ALB", "Serum Albumin", "Albumin, Serum"],
+      "loinc_code": "1751-7",
+      "unit": "g/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        3.5,
+        5.5
+      ]
+    }
+  },
+  "extraction_notes": [
+    "Liver panel usually has AST/ALT first, then ALP, Bilirubin, Albumin",
+    "Flags: H = High, L = Low",
+    "Check for fasting or hemolysis comments"
+  ]
+}

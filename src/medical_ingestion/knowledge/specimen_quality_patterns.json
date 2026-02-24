@@ -1,0 +1,187 @@
+{
+  "hemolysis": {
+    "patterns": [
+      "hemolyzed",
+      "hemolysis",
+      "hemolysed",
+      "hemolytic",
+      "specimen hemolyzed",
+      "sample hemolyzed",
+      "h index"
+    ],
+    "severity": "moderate",
+    "impact": "May affect potassium, LDH, AST, magnesium results",
+    "action": "Consider recollection if critical values"
+  },
+  "lipemia": {
+    "patterns": [
+      "lipemic",
+      "lipemia",
+      "lipaemic",
+      "lipemic sample",
+      "turbid",
+      "l index"
+    ],
+    "severity": "moderate",
+    "impact": "May affect chemistry results, spectrophotometric assays",
+    "action": "Consider recollection or ultracentrifugation"
+  },
+  "icterus": {
+    "patterns": [
+      "icteric",
+      "icterus",
+      "jaundiced",
+      "icteric sample",
+      "i index"
+    ],
+    "severity": "low",
+    "impact": "May affect bilirubin-based assays",
+    "action": "Note interference, results may be acceptable"
+  },
+  "clotted": {
+    "patterns": [
+      "clotted",
+      "clot",
+      "clots present",
+      "specimen clotted",
+      "sample clotted",
+      "fibrin clot"
+    ],
+    "severity": "critical",
+    "impact": "Invalidates CBC, coagulation studies",
+    "action": "Recollection required"
+  },
+  "insufficient_quantity": {
+    "patterns": [
+      "insufficient",
+      "quantity not sufficient",
+      "qns",
+      "insufficient sample",
+      "insufficient volume",
+      "not enough sample",
+      "inadequate volume"
+    ],
+    "severity": "critical",
+    "impact": "Cannot perform all requested tests",
+    "action": "Recollection required for missing tests"
+  },
+  "contaminated": {
+    "patterns": [
+      "contaminated",
+      "contamination",
+      "bacterial contamination",
+      "possible contamination"
+    ],
+    "severity": "critical",
+    "impact": "Results unreliable",
+    "action": "Recollection required"
+  },
+  "improper_collection": {
+    "patterns": [
+      "wrong tube",
+      "incorrect tube",
+      "improper collection",
+      "wrong anticoagulant",
+      "collection error"
+    ],
+    "severity": "critical",
+    "impact": "Results invalid",
+    "action": "Recollection required"
+  },
+  "delayed_processing": {
+    "patterns": [
+      "delayed",
+      "processing delay",
+      "aged specimen",
+      "old sample",
+      "prolonged storage"
+    ],
+    "severity": "moderate",
+    "impact": "May affect labile analytes",
+    "action": "Interpret with caution"
+  },
+  "unlabeled": {
+    "patterns": [
+      "unlabeled",
+      "not labeled",
+      "missing label",
+      "no label",
+      "labeling error"
+    ],
+    "severity": "critical",
+    "impact": "Cannot process - identification uncertain",
+    "action": "Recollection required"
+  },
+  "mislabeled": {
+    "patterns": [
+      "mislabeled",
+      "incorrect label",
+      "labeling discrepancy",
+      "label mismatch"
+    ],
+    "severity": "critical",
+    "impact": "Patient safety issue",
+    "action": "Recollection required"
+  },
+  "leaked": {
+    "patterns": [
+      "leaked",
+      "leaking",
+      "tube leaked",
+      "broken tube",
+      "cracked tube"
+    ],
+    "severity": "critical",
+    "impact": "Biohazard, cannot process",
+    "action": "Recollection required"
+  },
+  "temperature_issue": {
+    "patterns": [
+      "not refrigerated",
+      "warm",
+      "temperature issue",
+      "improper storage",
+      "not on ice",
+      "thawed"
+    ],
+    "severity": "moderate",
+    "impact": "May affect temperature-sensitive analytes",
+    "action": "Interpret with caution or recollect"
+  },
+  "interfering_substance": {
+    "patterns": [
+      "interference",
+      "interfering substance",
+      "medication interference",
+      "biotin interference",
+      "heparin contamination"
+    ],
+    "severity": "moderate",
+    "impact": "Specific assay interference",
+    "action": "Note interference, consider alternative method"
+  },
+  "diluted": {
+    "patterns": [
+      "diluted",
+      "dilution",
+      "iv contamination",
+      "iv line draw",
+      "drawn from line"
+    ],
+    "severity": "high",
+    "impact": "Results falsely low",
+    "action": "Recollection from peripheral site required"
+  },
+  "acceptable": {
+    "patterns": [
+      "acceptable",
+      "normal appearance",
+      "no issues",
+      "quality acceptable",
+      "adequate"
+    ],
+    "severity": "none",
+    "impact": "No quality issues",
+    "action": "Proceed with testing"
+  }
+}

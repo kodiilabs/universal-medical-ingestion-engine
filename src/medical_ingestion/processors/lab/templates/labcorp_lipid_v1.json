@@ -1,0 +1,133 @@
+{
+  "id": "labcorp_lipid_v1",
+  "vendor": "LabCorp",
+  "test_type": "lipid_panel",
+  "version": 2,
+  "description": "LabCorp Lipid Panel",
+  "header_pattern": "LabCorp.*Lipid|Lipid Panel",
+  "vendor_markers": [
+    "LabCorp",
+    "www.labcorp.com",
+    "Laboratory Corporation of America"
+  ],
+  "required_fields": [
+    "Total Cholesterol",
+    "HDL Cholesterol",
+    "LDL Cholesterol",
+    "Triglycerides"
+  ],
+  "layout_signature": {
+    "columns": 4,
+    "column_headers": null,
+    "has_reference_range": true,
+    "has_abnormal_flags": true,
+    "flag_in_result_column": false,
+    "typical_row_count": 6
+  },
+  "field_mappings": {
+    "cholesterol_total": {
+      "pdf_name": "Cholesterol, Total",
+      "aliases": ["Cholesterol, Total", "Total Cholesterol", "Cholesterol", "TC"],
+      "loinc_code": "2093-3",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        199
+      ]
+    },
+    "triglycerides": {
+      "pdf_name": "Triglycerides",
+      "aliases": ["Triglycerides", "Trig", "TG", "Triglyceride"],
+      "loinc_code": "2571-8",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        149
+      ]
+    },
+    "hdl": {
+      "pdf_name": "HDL Cholesterol",
+      "aliases": ["HDL Cholesterol", "HDL", "HDL-C", "High Density Lipoprotein"],
+      "loinc_code": "2085-9",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        40,
+        99
+      ]
+    },
+    "ldl": {
+      "pdf_name": "LDL Cholesterol (calc)",
+      "aliases": ["LDL Cholesterol", "LDL", "LDL-C", "LDL Calculated", "LDL Cholesterol Calc"],
+      "loinc_code": "13457-7",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        99
+      ]
+    },
+    "vldl": {
+      "pdf_name": "VLDL Cholesterol",
+      "aliases": ["VLDL Cholesterol", "VLDL", "VLDL-C"],
+      "loinc_code": "13458-5",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        5,
+        40
+      ]
+    },
+    "total_hdl_ratio": {
+      "pdf_name": "Total/HDL Ratio",
+      "aliases": ["Total/HDL Ratio", "Cholesterol/HDL Ratio", "TC/HDL"],
+      "loinc_code": "9830-1",
+      "unit": "ratio",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        5.0
+      ]
+    },
+    "non_hdl_cholesterol": {
+      "pdf_name": "Non-HDL Cholesterol",
+      "aliases": ["Non-HDL Cholesterol", "Non HDL Cholesterol"],
+      "loinc_code": "43396-1",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        129
+      ]
+    }
+  },
+  "extraction_notes": [
+    "LDL is calculated using Friedewald equation",
+    "Non-HDL Cholesterol may be reported",
+    "Check fasting status note at top or bottom",
+    "Flags: H = High, L = Low"
+  ]
+}

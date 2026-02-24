@@ -1,0 +1,89 @@
+{
+  "id": "labcorp_coag_v1",
+  "vendor": "LabCorp",
+  "test_type": "coagulation_panel",
+  "version": 2,
+  "description": "LabCorp Coagulation Panel (PT, PTT, INR)",
+  "header_pattern": "LabCorp.*Coagulation|PT|PTT|INR",
+  "vendor_markers": [
+    "LabCorp",
+    "www.labcorp.com",
+    "Laboratory Corporation of America"
+  ],
+  "required_fields": [
+    "PT",
+    "PTT",
+    "INR"
+  ],
+  "layout_signature": {
+    "columns": 4,
+    "column_headers": null,
+    "has_reference_range": true,
+    "has_abnormal_flags": true,
+    "flag_in_result_column": false,
+    "typical_row_count": 4
+  },
+  "field_mappings": {
+    "pt": {
+      "pdf_name": "Prothrombin Time",
+      "aliases": ["PT", "Prothrombin Time", "Pro Time"],
+      "loinc_code": "5902-2",
+      "unit": "sec",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        10.0,
+        13.5
+      ]
+    },
+    "inr": {
+      "pdf_name": "INR",
+      "aliases": ["INR", "International Normalized Ratio", "PT/INR"],
+      "loinc_code": "34714-6",
+      "unit": "",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0.8,
+        1.2
+      ]
+    },
+    "ptt": {
+      "pdf_name": "Partial Thromboplastin Time",
+      "aliases": ["PTT", "Partial Thromboplastin Time", "aPTT", "Activated PTT"],
+      "loinc_code": "14975-5",
+      "unit": "sec",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        25,
+        35
+      ]
+    },
+    "fibrinogen": {
+      "pdf_name": "Fibrinogen",
+      "aliases": ["Fibrinogen", "Fibrinogen Activity"],
+      "loinc_code": "3255-7",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        200,
+        400
+      ]
+    }
+  },
+  "extraction_notes": [
+    "PT and INR are related; INR often calculated from PT",
+    "PTT may vary depending on reagent",
+    "Flags: H = High, L = Low"
+  ]
+}

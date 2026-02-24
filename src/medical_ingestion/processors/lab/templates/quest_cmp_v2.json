@@ -1,0 +1,166 @@
+{
+  "id": "quest_cmp_v2",
+  "vendor": "Quest Diagnostics",
+  "test_type": "cmp",
+  "version": 2,
+  "description": "Quest Diagnostics Comprehensive Metabolic Panel",
+  "header_pattern": "Quest Diagnostics.*Comprehensive Metabolic|Quest.*CMP",
+  "vendor_markers": [
+    "Quest Diagnostics",
+    "www.questdiagnostics.com",
+    "QuestDiagnostics.com"
+  ],
+  "required_fields": [
+    "Glucose",
+    "BUN",
+    "Creatinine",
+    "Sodium",
+    "Potassium",
+    "Chloride",
+    "CO2",
+    "Calcium"
+  ],
+  "layout_signature": {
+    "columns": 5,
+    "has_reference_range": true,
+    "has_abnormal_flags": true,
+    "typical_row_count": 14,
+    "column_headers": null,
+    "flag_in_result_column": false
+  },
+  "field_mappings": {
+    "glucose": {
+      "pdf_name": "Glucose",
+      "aliases": ["GLU", "Fasting Glucose", "Blood Glucose", "Serum Glucose", "Glucose, Serum"],
+      "loinc_code": "2345-7",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        65,
+        99
+      ]
+    },
+    "bun": {
+      "pdf_name": "Urea Nitrogen (BUN)",
+      "aliases": ["BUN", "Blood Urea Nitrogen", "Urea Nitrogen", "Urea", "Serum Urea Nitrogen"],
+      "loinc_code": "3094-0",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        7,
+        25
+      ]
+    },
+    "creatinine": {
+      "pdf_name": "Creatinine",
+      "aliases": ["CREAT", "Creat", "Serum Creatinine", "Creatinine, Serum", "SCr"],
+      "loinc_code": "2160-0",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0.60,
+        1.35
+      ]
+    },
+    "egfr": {
+      "pdf_name": "eGFR",
+      "aliases": ["GFR", "Estimated GFR", "eGFR Non-Afr. American", "eGFR African American", "Glomerular Filtration Rate"],
+      "loinc_code": "33914-3",
+      "unit": "mL/min/1.73m2",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        60,
+        120
+      ]
+    },
+    "sodium": {
+      "pdf_name": "Sodium",
+      "aliases": ["Na", "Na+", "Serum Sodium", "Sodium, Serum"],
+      "loinc_code": "2951-2",
+      "unit": "mmol/L",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        135,
+        146
+      ]
+    },
+    "potassium": {
+      "pdf_name": "Potassium",
+      "aliases": ["K", "K+", "Serum Potassium", "Potassium, Serum"],
+      "loinc_code": "2823-3",
+      "unit": "mmol/L",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        3.5,
+        5.3
+      ]
+    },
+    "chloride": {
+      "pdf_name": "Chloride",
+      "aliases": ["Cl", "Cl-", "Serum Chloride", "Chloride, Serum"],
+      "loinc_code": "2075-0",
+      "unit": "mmol/L",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        98,
+        110
+      ]
+    },
+    "co2": {
+      "pdf_name": "Carbon Dioxide",
+      "aliases": ["CO2", "Bicarbonate", "HCO3", "Total CO2", "TCO2", "Serum CO2"],
+      "loinc_code": "2028-9",
+      "unit": "mmol/L",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        20,
+        32
+      ]
+    },
+    "calcium": {
+      "pdf_name": "Calcium",
+      "aliases": ["Ca", "Ca++", "Serum Calcium", "Calcium, Serum", "Total Calcium"],
+      "loinc_code": "17861-6",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        8.6,
+        10.3
+      ]
+    }
+  },
+  "extraction_notes": [
+    "Quest CMP usually uses 5-column layout with separate Flag column",
+    "Reference ranges may appear as text (e.g., '65-99')",
+    "eGFR often includes footnotes by age/sex",
+    "Quest reports frequently include fasting status notes",
+    "Ignore method disclaimers at bottom of report"
+  ]
+}

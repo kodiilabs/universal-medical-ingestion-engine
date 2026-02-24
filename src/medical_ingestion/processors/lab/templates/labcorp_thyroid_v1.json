@@ -1,0 +1,118 @@
+{
+  "id": "labcorp_thyroid_v1",
+  "vendor": "LabCorp",
+  "test_type": "thyroid_panel",
+  "version": 2,
+  "description": "LabCorp Thyroid Panel (TSH, Free T4, Free T3)",
+  "header_pattern": "LabCorp.*Thyroid|Thyroid Panel",
+  "vendor_markers": [
+    "LabCorp",
+    "www.labcorp.com",
+    "Laboratory Corporation of America"
+  ],
+  "required_fields": [
+    "TSH",
+    "Free T4",
+    "Free T3"
+  ],
+  "layout_signature": {
+    "columns": 4,
+    "column_headers": null,
+    "has_reference_range": true,
+    "has_abnormal_flags": true,
+    "flag_in_result_column": false,
+    "typical_row_count": 5
+  },
+  "field_mappings": {
+    "tsh": {
+      "pdf_name": "TSH",
+      "aliases": ["TSH", "Thyroid Stimulating Hormone", "Thyrotropin", "TSH 3rd Generation"],
+      "loinc_code": "3016-3",
+      "unit": "uIU/mL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0.4,
+        4.0
+      ]
+    },
+    "t4_free": {
+      "pdf_name": "Free T4",
+      "aliases": ["Free T4", "FT4", "T4, Free", "Thyroxine Free", "Free Thyroxine"],
+      "loinc_code": "3027-0",
+      "unit": "ng/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0.8,
+        1.8
+      ]
+    },
+    "t4_total": {
+      "pdf_name": "T4, Total",
+      "aliases": ["T4", "T4, Total", "Thyroxine", "Total T4"],
+      "loinc_code": "3026-2",
+      "unit": "ug/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        4.5,
+        12.0
+      ]
+    },
+    "t3_free": {
+      "pdf_name": "Free T3",
+      "aliases": ["Free T3", "FT3", "T3, Free", "Triiodothyronine Free"],
+      "loinc_code": "3051-3",
+      "unit": "pg/mL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        2.3,
+        4.2
+      ]
+    },
+    "t3_total": {
+      "pdf_name": "T3, Total",
+      "aliases": ["T3", "T3, Total", "Triiodothyronine", "Total T3"],
+      "loinc_code": "3053-9",
+      "unit": "ng/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        80,
+        200
+      ]
+    },
+    "t3_uptake": {
+      "pdf_name": "T3 Uptake",
+      "aliases": ["T3 Uptake", "T3U", "T3 Resin Uptake"],
+      "loinc_code": "3050-5",
+      "unit": "%",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        24,
+        39
+      ]
+    }
+  },
+  "extraction_notes": [
+    "TSH is usually first row",
+    "Free T4 and Free T3 reported in different units",
+    "Flags: H = High, L = Low",
+    "Check for notes on pregnancy reference ranges"
+  ]
+}

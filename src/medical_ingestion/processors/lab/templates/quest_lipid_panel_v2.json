@@ -1,0 +1,121 @@
+{
+  "id": "quest_lipid_panel_v2",
+  "vendor": "Quest Diagnostics",
+  "test_type": "lipid_panel",
+  "version": 2,
+  "description": "Quest Diagnostics Lipid Panel (Cholesterol, LDL, HDL, Triglycerides)",
+  "header_pattern": "Quest Diagnostics.*Lipid Panel|Quest.*Lipid|LIPID PANEL",
+  "vendor_markers": [
+    "Quest Diagnostics",
+    "QuestDiagnostics.com",
+    "www.questdiagnostics.com"
+  ],
+  "required_fields": [
+    "Total Cholesterol",
+    "HDL Cholesterol",
+    "LDL Cholesterol",
+    "Triglycerides"
+  ],
+  "layout_signature": {
+    "columns": 5,
+    "has_reference_range": true,
+    "has_abnormal_flags": true,
+    "typical_row_count": 6,
+    "column_headers": null,
+    "flag_in_result_column": false
+  },
+  "field_mappings": {
+    "total_cholesterol": {
+      "pdf_name": "Cholesterol, Total",
+      "aliases": ["Total Cholesterol", "Cholesterol", "TC", "Chol", "Serum Cholesterol"],
+      "loinc_code": "2093-3",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        199
+      ]
+    },
+    "hdl_cholesterol": {
+      "pdf_name": "HDL Cholesterol",
+      "aliases": ["HDL", "HDL-C", "High Density Lipoprotein", "HDL Chol", "Good Cholesterol"],
+      "loinc_code": "2085-9",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        40,
+        999
+      ]
+    },
+    "ldl_cholesterol": {
+      "pdf_name": "LDL Cholesterol (calc)",
+      "aliases": ["LDL", "LDL-C", "Low Density Lipoprotein", "LDL Chol", "LDL Calculated", "Bad Cholesterol"],
+      "loinc_code": "13457-7",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        99
+      ]
+    },
+    "triglycerides": {
+      "pdf_name": "Triglycerides",
+      "aliases": ["TG", "Trig", "Trigs", "Serum Triglycerides", "TRIG"],
+      "loinc_code": "2571-8",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        149
+      ]
+    },
+    "chol_hdl_ratio": {
+      "pdf_name": "Cholesterol / HDL Ratio",
+      "aliases": ["TC/HDL Ratio", "Chol/HDL", "Total Chol/HDL Ratio", "Cardiac Risk Ratio"],
+      "loinc_code": "9830-1",
+      "unit": "",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0.0,
+        5.0
+      ]
+    },
+    "non_hdl_cholesterol": {
+      "pdf_name": "Non-HDL Cholesterol",
+      "aliases": ["Non-HDL", "Non-HDL Chol", "Non HDL Cholesterol", "Non-HDL-C"],
+      "loinc_code": "43396-1",
+      "unit": "mg/dL",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0,
+        129
+      ]
+    }
+  },
+  "extraction_notes": [
+    "Quest Lipid Panel typically reports LDL as calculated (Friedewald equation)",
+    "LDL may be omitted or marked N/A if triglycerides >400 mg/dL",
+    "Reference ranges may appear as clinical targets rather than true intervals",
+    "Non-HDL cholesterol is often included without explicit reference range",
+    "Fasting status note may appear below table and should not be parsed as a result",
+    "Flags may include H (High) only; L is uncommon for lipid panels"
+  ]
+}

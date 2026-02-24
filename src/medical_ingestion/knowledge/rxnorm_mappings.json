@@ -1,0 +1,353 @@
+{
+  "153165": {
+    "generic_name": "metformin",
+    "brand_names": ["Glucophage", "Fortamet", "Glumetza"],
+    "category": "antidiabetic",
+    "class": "biguanide",
+    "common_strengths": ["500 mg", "850 mg", "1000 mg"],
+    "common_forms": ["tablet", "extended-release tablet"],
+    "indication": "type 2 diabetes"
+  },
+  "106892": {
+    "generic_name": "glipizide",
+    "brand_names": ["Glucotrol"],
+    "category": "antidiabetic",
+    "class": "sulfonylurea",
+    "common_strengths": ["5 mg", "10 mg"],
+    "common_forms": ["tablet", "extended-release tablet"],
+    "indication": "type 2 diabetes"
+  },
+  "50166": {
+    "generic_name": "atorvastatin",
+    "brand_names": ["Lipitor"],
+    "category": "lipid-lowering",
+    "class": "statin",
+    "common_strengths": ["10 mg", "20 mg", "40 mg", "80 mg"],
+    "common_forms": ["tablet"],
+    "indication": "hyperlipidemia"
+  },
+  "42463": {
+    "generic_name": "simvastatin",
+    "brand_names": ["Zocor"],
+    "category": "lipid-lowering",
+    "class": "statin",
+    "common_strengths": ["5 mg", "10 mg", "20 mg", "40 mg", "80 mg"],
+    "common_forms": ["tablet"],
+    "indication": "hyperlipidemia"
+  },
+  "36567": {
+    "generic_name": "lisinopril",
+    "brand_names": ["Prinivil", "Zestril"],
+    "category": "antihypertensive",
+    "class": "ACE inhibitor",
+    "common_strengths": ["5 mg", "10 mg", "20 mg", "40 mg"],
+    "common_forms": ["tablet"],
+    "indication": "hypertension, heart failure"
+  },
+  "214354": {
+    "generic_name": "losartan",
+    "brand_names": ["Cozaar"],
+    "category": "antihypertensive",
+    "class": "ARB",
+    "common_strengths": ["25 mg", "50 mg", "100 mg"],
+    "common_forms": ["tablet"],
+    "indication": "hypertension"
+  },
+  "203368": {
+    "generic_name": "amlodipine",
+    "brand_names": ["Norvasc"],
+    "category": "antihypertensive",
+    "class": "calcium channel blocker",
+    "common_strengths": ["2.5 mg", "5 mg", "10 mg"],
+    "common_forms": ["tablet"],
+    "indication": "hypertension, angina"
+  },
+  "197379": {
+    "generic_name": "hydrochlorothiazide",
+    "brand_names": ["Microzide"],
+    "category": "antihypertensive",
+    "class": "thiazide diuretic",
+    "common_strengths": ["12.5 mg", "25 mg", "50 mg"],
+    "common_forms": ["tablet", "capsule"],
+    "indication": "hypertension, edema"
+  },
+  "4337": {
+    "generic_name": "levothyroxine",
+    "brand_names": ["Synthroid", "Levoxyl", "Unithroid"],
+    "category": "thyroid",
+    "class": "thyroid hormone",
+    "common_strengths": ["25 mcg", "50 mcg", "75 mcg", "100 mcg", "125 mcg", "150 mcg"],
+    "common_forms": ["tablet"],
+    "indication": "hypothyroidism"
+  },
+  "1191": {
+    "generic_name": "aspirin",
+    "brand_names": ["Bayer", "Ecotrin"],
+    "category": "antiplatelet",
+    "class": "NSAID",
+    "common_strengths": ["81 mg", "325 mg"],
+    "common_forms": ["tablet", "enteric-coated tablet"],
+    "indication": "pain, fever, cardiovascular prophylaxis"
+  },
+  "855332": {
+    "generic_name": "warfarin",
+    "brand_names": ["Coumadin", "Jantoven"],
+    "category": "anticoagulant",
+    "class": "vitamin K antagonist",
+    "common_strengths": ["1 mg", "2 mg", "2.5 mg", "3 mg", "4 mg", "5 mg", "6 mg", "7.5 mg", "10 mg"],
+    "common_forms": ["tablet"],
+    "indication": "anticoagulation"
+  },
+  "1361574": {
+    "generic_name": "apixaban",
+    "brand_names": ["Eliquis"],
+    "category": "anticoagulant",
+    "class": "direct oral anticoagulant (DOAC)",
+    "common_strengths": ["2.5 mg", "5 mg"],
+    "common_forms": ["tablet"],
+    "indication": "atrial fibrillation, DVT/PE prophylaxis"
+  },
+  "1114195": {
+    "generic_name": "rivaroxaban",
+    "brand_names": ["Xarelto"],
+    "category": "anticoagulant",
+    "class": "direct oral anticoagulant (DOAC)",
+    "common_strengths": ["10 mg", "15 mg", "20 mg"],
+    "common_forms": ["tablet"],
+    "indication": "atrial fibrillation, DVT/PE"
+  },
+  "7052": {
+    "generic_name": "omeprazole",
+    "brand_names": ["Prilosec"],
+    "category": "gastrointestinal",
+    "class": "proton pump inhibitor",
+    "common_strengths": ["10 mg", "20 mg", "40 mg"],
+    "common_forms": ["capsule", "tablet"],
+    "indication": "GERD, peptic ulcer"
+  },
+  "203151": {
+    "generic_name": "pantoprazole",
+    "brand_names": ["Protonix"],
+    "category": "gastrointestinal",
+    "class": "proton pump inhibitor",
+    "common_strengths": ["20 mg", "40 mg"],
+    "common_forms": ["tablet"],
+    "indication": "GERD, peptic ulcer"
+  },
+  "857974": {
+    "generic_name": "albuterol",
+    "brand_names": ["ProAir", "Ventolin", "Proventil"],
+    "category": "respiratory",
+    "class": "beta-2 agonist",
+    "common_strengths": ["90 mcg/actuation"],
+    "common_forms": ["inhaler", "nebulizer solution"],
+    "indication": "asthma, COPD"
+  },
+  "103919": {
+    "generic_name": "fluticasone",
+    "brand_names": ["Flovent", "Flonase"],
+    "category": "respiratory",
+    "class": "corticosteroid",
+    "common_strengths": ["44 mcg", "110 mcg", "220 mcg"],
+    "common_forms": ["inhaler", "nasal spray"],
+    "indication": "asthma, allergic rhinitis"
+  },
+  "1114680": {
+    "generic_name": "montelukast",
+    "brand_names": ["Singulair"],
+    "category": "respiratory",
+    "class": "leukotriene receptor antagonist",
+    "common_strengths": ["4 mg", "5 mg", "10 mg"],
+    "common_forms": ["tablet", "chewable tablet"],
+    "indication": "asthma, allergic rhinitis"
+  },
+  "161": {
+    "generic_name": "acetaminophen",
+    "brand_names": ["Tylenol"],
+    "category": "analgesic",
+    "class": "non-opioid analgesic",
+    "common_strengths": ["325 mg", "500 mg", "650 mg"],
+    "common_forms": ["tablet", "capsule", "liquid"],
+    "indication": "pain, fever"
+  },
+  "5640": {
+    "generic_name": "ibuprofen",
+    "brand_names": ["Advil", "Motrin"],
+    "category": "analgesic",
+    "class": "NSAID",
+    "common_strengths": ["200 mg", "400 mg", "600 mg", "800 mg"],
+    "common_forms": ["tablet", "capsule", "liquid"],
+    "indication": "pain, inflammation, fever"
+  },
+  "7242": {
+    "generic_name": "prednisone",
+    "brand_names": ["Deltasone", "Rayos"],
+    "category": "corticosteroid",
+    "class": "systemic corticosteroid",
+    "common_strengths": ["5 mg", "10 mg", "20 mg", "50 mg"],
+    "common_forms": ["tablet"],
+    "indication": "inflammation, autoimmune conditions"
+  },
+  "8123": {
+    "generic_name": "furosemide",
+    "brand_names": ["Lasix"],
+    "category": "diuretic",
+    "class": "loop diuretic",
+    "common_strengths": ["20 mg", "40 mg", "80 mg"],
+    "common_forms": ["tablet"],
+    "indication": "edema, heart failure"
+  },
+  "131725": {
+    "generic_name": "spironolactone",
+    "brand_names": ["Aldactone"],
+    "category": "diuretic",
+    "class": "potassium-sparing diuretic",
+    "common_strengths": ["25 mg", "50 mg", "100 mg"],
+    "common_forms": ["tablet"],
+    "indication": "heart failure, hypertension, edema"
+  },
+  "35296": {
+    "generic_name": "metoprolol",
+    "brand_names": ["Lopressor", "Toprol-XL"],
+    "category": "antihypertensive",
+    "class": "beta blocker",
+    "common_strengths": ["25 mg", "50 mg", "100 mg"],
+    "common_forms": ["tablet", "extended-release tablet"],
+    "indication": "hypertension, angina, heart failure"
+  },
+  "2551": {
+    "generic_name": "carvedilol",
+    "brand_names": ["Coreg"],
+    "category": "antihypertensive",
+    "class": "beta blocker",
+    "common_strengths": ["3.125 mg", "6.25 mg", "12.5 mg", "25 mg"],
+    "common_forms": ["tablet"],
+    "indication": "heart failure, hypertension"
+  },
+  "72143": {
+    "generic_name": "gabapentin",
+    "brand_names": ["Neurontin"],
+    "category": "neuropathic",
+    "class": "anticonvulsant",
+    "common_strengths": ["100 mg", "300 mg", "400 mg", "600 mg", "800 mg"],
+    "common_forms": ["capsule", "tablet"],
+    "indication": "neuropathic pain, seizures"
+  },
+  "284635": {
+    "generic_name": "pregabalin",
+    "brand_names": ["Lyrica"],
+    "category": "neuropathic",
+    "class": "anticonvulsant",
+    "common_strengths": ["25 mg", "50 mg", "75 mg", "100 mg", "150 mg", "200 mg", "300 mg"],
+    "common_forms": ["capsule"],
+    "indication": "neuropathic pain, fibromyalgia"
+  },
+  "321988": {
+    "generic_name": "escitalopram",
+    "brand_names": ["Lexapro"],
+    "category": "antidepressant",
+    "class": "SSRI",
+    "common_strengths": ["5 mg", "10 mg", "20 mg"],
+    "common_forms": ["tablet"],
+    "indication": "depression, anxiety"
+  },
+  "41127": {
+    "generic_name": "sertraline",
+    "brand_names": ["Zoloft"],
+    "category": "antidepressant",
+    "class": "SSRI",
+    "common_strengths": ["25 mg", "50 mg", "100 mg"],
+    "common_forms": ["tablet"],
+    "indication": "depression, anxiety, OCD"
+  },
+  "3616": {
+    "generic_name": "citalopram",
+    "brand_names": ["Celexa"],
+    "category": "antidepressant",
+    "class": "SSRI",
+    "common_strengths": ["10 mg", "20 mg", "40 mg"],
+    "common_forms": ["tablet"],
+    "indication": "depression"
+  },
+  "321208": {
+    "generic_name": "duloxetine",
+    "brand_names": ["Cymbalta"],
+    "category": "antidepressant",
+    "class": "SNRI",
+    "common_strengths": ["20 mg", "30 mg", "60 mg"],
+    "common_forms": ["capsule"],
+    "indication": "depression, anxiety, neuropathic pain"
+  },
+  "89013": {
+    "generic_name": "amoxicillin",
+    "brand_names": ["Amoxil"],
+    "category": "antibiotic",
+    "class": "penicillin",
+    "common_strengths": ["250 mg", "500 mg", "875 mg"],
+    "common_forms": ["capsule", "tablet", "suspension"],
+    "indication": "bacterial infections"
+  },
+  "202433": {
+    "generic_name": "azithromycin",
+    "brand_names": ["Zithromax", "Z-Pak"],
+    "category": "antibiotic",
+    "class": "macrolide",
+    "common_strengths": ["250 mg", "500 mg"],
+    "common_forms": ["tablet", "suspension"],
+    "indication": "bacterial infections"
+  },
+  "32675": {
+    "generic_name": "ciprofloxacin",
+    "brand_names": ["Cipro"],
+    "category": "antibiotic",
+    "class": "fluoroquinolone",
+    "common_strengths": ["250 mg", "500 mg", "750 mg"],
+    "common_forms": ["tablet"],
+    "indication": "bacterial infections"
+  },
+  "3247": {
+    "generic_name": "cephalexin",
+    "brand_names": ["Keflex"],
+    "category": "antibiotic",
+    "class": "cephalosporin",
+    "common_strengths": ["250 mg", "500 mg"],
+    "common_forms": ["capsule", "tablet"],
+    "indication": "bacterial infections"
+  },
+  "723": {
+    "generic_name": "amoxicillin-clavulanate",
+    "brand_names": ["Augmentin"],
+    "category": "antibiotic",
+    "class": "penicillin combination",
+    "common_strengths": ["250-125 mg", "500-125 mg", "875-125 mg"],
+    "common_forms": ["tablet"],
+    "indication": "bacterial infections"
+  },
+  "6809": {
+    "generic_name": "insulin glargine",
+    "brand_names": ["Lantus", "Toujeo"],
+    "category": "antidiabetic",
+    "class": "long-acting insulin",
+    "common_strengths": ["100 units/mL", "300 units/mL"],
+    "common_forms": ["injection", "pen"],
+    "indication": "diabetes mellitus"
+  },
+  "847259": {
+    "generic_name": "insulin lispro",
+    "brand_names": ["Humalog"],
+    "category": "antidiabetic",
+    "class": "rapid-acting insulin",
+    "common_strengths": ["100 units/mL"],
+    "common_forms": ["injection", "pen"],
+    "indication": "diabetes mellitus"
+  },
+  "860975": {
+    "generic_name": "insulin aspart",
+    "brand_names": ["NovoLog"],
+    "category": "antidiabetic",
+    "class": "rapid-acting insulin",
+    "common_strengths": ["100 units/mL"],
+    "common_forms": ["injection", "pen"],
+    "indication": "diabetes mellitus"
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "id": "labcorp_cmp",
+  "vendor": "LabCorp",
+  "test_type": "cmp",
+  "version": 2,
+  "description": "LabCorp Comprehensive Metabolic Panel",
+  "header_pattern": "LabCorp.*Comprehensive Metabolic|Lab.*CMP|COMP\\. METABOLIC PANEL",
+  "vendor_markers": [
+    "LabCorp",
+    "Laboratory Corporation of America",
+    "www.labcorp.com",
+    "LabCorp.com"
+  ],
+  "required_fields": [
+    "Glucose",
+    "BUN",
+    "Creatinine",
+    "Sodium",
+    "Potassium",
+    "Chloride",
+    "CO2",
+    "Calcium"
+  ],
+  "layout_signature": {
+    "columns": 6,
+    "column_headers": ["TESTS", "RESULT", "FLAG", "UNITS", "REFERENCE INTERVAL", "LAB"],
+    "has_reference_range": true,
+    "has_abnormal_flags": true,
+    "flag_in_result_column": false,
+    "typical_row_count": 18
+  },
+  "field_mappings": {
+    "glucose": {
+      "pdf_name": "Glucose",
+      "aliases": ["Glucose", "Glucose, Serum", "Blood Glucose", "Fasting Glucose"],
+      "loinc_code": "2345-7",
+      "unit": "mg/dL",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        70,
+        100
+      ]
+    },
+    "bun": {
+      "pdf_name": "BUN",
+      "aliases": ["BUN", "Blood Urea Nitrogen", "Urea Nitrogen", "Urea"],
+      "loinc_code": "3094-0",
+      "unit": "mg/dL",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        7,
+        20
+      ]
+    },
+    "creatinine": {
+      "pdf_name": "Creatinine",
+      "aliases": ["Creatinine", "Creat", "Serum Creatinine"],
+      "loinc_code": "2160-0",
+      "unit": "mg/dL",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        0.7,
+        1.3
+      ]
+    },
+    "egfr": {
+      "pdf_name": "eGFR",
+      "aliases": ["eGFR", "GFR", "Estimated GFR", "Glomerular Filtration Rate"],
+      "loinc_code": "33914-3",
+      "unit": "mL/min/1.73",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        60,
+        120
+      ]
+    },
+    "bun_creatinine_ratio": {
+      "pdf_name": "BUN/Creatinine Ratio",
+      "aliases": ["BUN/Creatinine Ratio", "BUN/Creat Ratio", "B/C Ratio"],
+      "loinc_code": "3097-3",
+      "unit": "",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        8,
+        20
+      ]
+    },
+    "sodium": {
+      "pdf_name": "Sodium",
+      "aliases": ["Sodium", "Na", "Sodium, Serum", "Na+"],
+      "loinc_code": "2951-2",
+      "unit": "mmol/L",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        136,
+        145
+      ]
+    },
+    "potassium": {
+      "pdf_name": "Potassium",
+      "aliases": ["Potassium", "K", "Potassium, Serum", "K+"],
+      "loinc_code": "2823-3",
+      "unit": "mmol/L",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        3.5,
+        5.2
+      ]
+    },
+    "chloride": {
+      "pdf_name": "Chloride",
+      "aliases": ["Chloride", "Cl", "Chloride, Serum"],
+      "loinc_code": "2075-0",
+      "unit": "mmol/L",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        98,
+        107
+      ]
+    },
+    "carbon_dioxide": {
+      "pdf_name": "Carbon Dioxide, Total",
+      "aliases": ["CO2", "Carbon Dioxide", "Total CO2", "Bicarbonate", "HCO3"],
+      "loinc_code": "2028-9",
+      "unit": "mmol/L",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        20,
+        29
+      ]
+    },
+    "calcium": {
+      "pdf_name": "Calcium",
+      "aliases": ["Calcium", "Ca", "Calcium, Serum", "Total Calcium"],
+      "loinc_code": "17861-6",
+      "unit": "mg/dL",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        8.7,
+        10.2
+      ]
+    },
+    "total_protein": {
+      "pdf_name": "Protein, Total",
+      "aliases": ["Total Protein", "Protein, Total", "TP"],
+      "loinc_code": "2885-2",
+      "unit": "g/dL",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        6.0,
+        8.5
+      ]
+    },
+    "albumin": {
+      "pdf_name": "Albumin",
+      "aliases": ["Albumin", "Alb", "Serum Albumin"],
+      "loinc_code": "1751-7",
+      "unit": "g/dL",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        3.5,
+        5.5
+      ]
+    },
+    "globulin": {
+      "pdf_name": "Globulin, Total",
+      "aliases": ["Globulin", "Glob", "Total Globulin"],
+      "loinc_code": "10834-0",
+      "unit": "g/dL",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        1.5,
+        4.5
+      ]
+    },
+    "ag_ratio": {
+      "pdf_name": "A/G Ratio",
+      "aliases": ["A/G Ratio", "Albumin/Globulin Ratio", "AG Ratio"],
+      "loinc_code": "1759-0",
+      "unit": "",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        1.1,
+        2.5
+      ]
+    },
+    "bilirubin_total": {
+      "pdf_name": "Bilirubin, Total",
+      "aliases": ["Bilirubin, Total", "Total Bilirubin", "T Bili", "TBIL"],
+      "loinc_code": "1975-2",
+      "unit": "mg/dL",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        0.0,
+        1.2
+      ]
+    },
+    "alkaline_phosphatase": {
+      "pdf_name": "Alkaline Phosphatase",
+      "aliases": ["Alkaline Phosphatase", "Alk Phos", "ALP"],
+      "loinc_code": "6768-6",
+      "unit": "IU/L",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        39,
+        117
+      ]
+    },
+    "ast": {
+      "pdf_name": "AST (SGOT)",
+      "aliases": ["AST", "SGOT", "Aspartate Aminotransferase", "AST (SGOT)"],
+      "loinc_code": "1920-8",
+      "unit": "IU/L",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        0,
+        40
+      ]
+    },
+    "alt": {
+      "pdf_name": "ALT (SGPT)",
+      "aliases": ["ALT", "SGPT", "Alanine Aminotransferase", "ALT (SGPT)"],
+      "loinc_code": "1742-6",
+      "unit": "IU/L",
+      "unit_column": 3,
+      "value_column": 1,
+      "ref_range_column": 4,
+      "flag_column": 2,
+      "typical_range": [
+        0,
+        44
+      ]
+    }
+  },
+  "extraction_notes": [
+    "LabCorp CMP typically organized into sections: Kidney Function, Electrolytes, Liver Function",
+    "Header row usually: 'Test', 'Result', 'Flag', 'Units', 'Reference Interval'",
+    "Note: Reference ranges may vary by age/sex - check for demographic-specific ranges",
+    "eGFR often includes note about race-based calculations (CKD-EPI equation)",
+    "Watch for 'H' (High) or 'L' (Low) flags in Flag column",
+    "Specimen comments (hemolysis, lipemia) typically appear at bottom of report"
+  ]
+}

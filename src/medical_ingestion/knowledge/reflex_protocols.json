@@ -1,0 +1,54 @@
+{
+  "tsh_elevated": {
+    "condition": {
+      "field": "tsh",
+      "operator": ">",
+      "value": 4.5
+    },
+    "reflex_tests": ["free_t4", "tpo_antibodies"],
+    "reasoning": "Elevated TSH suggests hypothyroidism - assess thyroid hormone levels",
+    "guideline": "AACE 2012"
+  },
+  "tsh_suppressed": {
+    "condition": {
+      "field": "tsh",
+      "operator": "<",
+      "value": 0.5
+    },
+    "reflex_tests": ["free_t4", "free_t3"],
+    "reasoning": "Suppressed TSH suggests hyperthyroidism - assess thyroid hormone levels",
+    "guideline": "AACE 2012"
+  },
+  "anemia": {
+    "condition": {
+      "any": [
+        {
+          "all": [
+            { "field": "hemoglobin", "operator": "<", "value": 12.0 },
+            { "field": "sex", "operator": "==", "value": "female" }
+          ]
+        },
+        {
+          "all": [
+            { "field": "hemoglobin", "operator": "<", "value": 13.5 },
+            { "field": "sex", "operator": "==", "value": "male" }
+          ]
+        }
+      ]
+    },
+    "reflex_tests": ["iron", "ferritin", "tibc", "vitamin_b12", "folate"],
+    "reasoning": "Anemia detected - determine etiology",
+    "guideline": "CAP 2020"
+  },
+  "prediabetes": {
+    "condition": {
+      "all": [
+        { "field": "glucose", "operator": ">", "value": 100 },
+        { "field": "glucose", "operator": "<", "value": 126 }
+      ]
+    },
+    "reflex_tests": ["hba1c"],
+    "reasoning": "Impaired fasting glucose - assess long-term glycemic control",
+    "guideline": "ADA 2023"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "quest_coag_v2",
+  "vendor": "Quest Diagnostics",
+  "test_type": "coagulation_panel",
+  "version": 2,
+  "description": "Quest Diagnostics Coagulation Panel (PT, PTT, INR)",
+  "header_pattern": "Quest.*Coagulation|PT|PTT|INR",
+  "vendor_markers": [
+    "Quest Diagnostics",
+    "www.questdiagnostics.com",
+    "QuestDiagnostics.com"
+  ],
+  "required_fields": [
+    "PT",
+    "PTT",
+    "INR"
+  ],
+  "layout_signature": {
+    "columns": 4,
+    "has_reference_range": true,
+    "has_abnormal_flags": true,
+    "typical_row_count": 4,
+    "column_headers": null,
+    "flag_in_result_column": false
+  },
+  "field_mappings": {
+    "pt": {
+      "pdf_name": "Prothrombin Time",
+      "aliases": ["PT", "Pro Time", "Protime", "PT Time", "Serum PT"],
+      "loinc_code": "5902-2",
+      "unit": "sec",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        10.0,
+        13.5
+      ]
+    },
+    "ptt": {
+      "pdf_name": "Partial Thromboplastin Time",
+      "aliases": ["PTT", "aPTT", "Activated PTT", "APTT", "Partial Prothrombin Time"],
+      "loinc_code": "14975-5",
+      "unit": "sec",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        25,
+        35
+      ]
+    },
+    "inr": {
+      "pdf_name": "INR",
+      "aliases": ["International Normalized Ratio", "PT/INR", "INR Ratio", "Prothrombin INR"],
+      "loinc_code": "34714-6",
+      "unit": "",
+      "unit_column": null,
+      "value_column": 1,
+      "ref_range_column": 2,
+      "flag_column": 3,
+      "typical_range": [
+        0.8,
+        1.2
+      ]
+    }
+  },
+  "extraction_notes": [
+    "PT and INR are related; INR often calculated from PT",
+    "PTT varies with reagents",
+    "Flags: H = High, L = Low"
+  ]
+}
