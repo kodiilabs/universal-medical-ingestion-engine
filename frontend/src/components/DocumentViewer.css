@@ -1,0 +1,129 @@
+.document-viewer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #1a1a2e;
+}
+
+.document-viewer.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-state {
+  text-align: center;
+  color: #6a6a8e;
+}
+
+.empty-state svg {
+  margin-bottom: 16px;
+  opacity: 0.5;
+}
+
+.empty-state p {
+  font-size: 14px;
+}
+
+.viewer-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #2a2a4e;
+  border-bottom: 1px solid #3a3a5e;
+}
+
+.toolbar-left .file-name {
+  font-size: 13px;
+  color: #a0a0c0;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.toolbar-center {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toolbar-center button,
+.toolbar-right button {
+  padding: 6px 12px;
+  background: #3a3a5e;
+  border: none;
+  border-radius: 4px;
+  color: #e0e0e0;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.toolbar-center button:hover:not(:disabled),
+.toolbar-right button:hover:not(:disabled) {
+  background: #4a4a7e;
+}
+
+.toolbar-center button:disabled,
+.toolbar-right button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toolbar-center span,
+.toolbar-right span {
+  font-size: 13px;
+  color: #a0a0c0;
+  min-width: 80px;
+  text-align: center;
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.viewer-content {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: #0f0f1a;
+}
+
+.viewer-content img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.viewer-content .react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.viewer-content .react-pdf__Page {
+  margin-bottom: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.viewer-content .react-pdf__Page canvas {
+  display: block;
+}
+
+.loading, .error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: #a0a0c0;
+  font-size: 14px;
+}
+
+.error {
+  color: #ff6a4a;
+}

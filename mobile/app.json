@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Medical Ingestion",
+    "slug": "medical-ingestion-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0ea5e9"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.medicalingestion.mobile",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs camera access to capture medical documents for processing.",
+        "NSPhotoLibraryUsageDescription": "This app needs photo library access to select medical documents for processing."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0ea5e9"
+      },
+      "package": "com.medicalingestion.mobile",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Medical Ingestion to access your camera to capture documents."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Medical Ingestion to access your photos to select documents."
+        }
+      ]
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+# ============================================================================
+# Universal Medical Ingestion Engine — Docker Compose
+# ============================================================================
+# Usage:
+#   docker compose up --build -d    (first time — builds images)
+#   docker compose up -d            (subsequent starts)
+#   docker compose down             (stop)
+#   docker compose logs -f backend  (watch backend logs)
+# ============================================================================
+
+services:
+  # --------------------------------------------------------------------------
+  # Ollama — Local LLM inference server
+  # --------------------------------------------------------------------------
+  ollama:
+    image: ollama/ollama:latest
+    container_name: medical-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+      - ../../models:/models:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:11434/ || exit 1"]
+      interval: 10s
+      timeout: 5s
+      start_period: 15s
+      retries: 30
+
+  # --------------------------------------------------------------------------
+  # Backend — FastAPI + PaddleOCR + ML Pipeline
+  # --------------------------------------------------------------------------
+  backend:
+    build:
+      context: ../..
+      dockerfile: deployment/docker/Dockerfile.backend
+    container_name: medical-backend
+    ports:
+      - "8000:8000"
+    env_file: .env.docker
+    volumes:
+      - app-data:/app/data/uploads
+    depends_on:
+      ollama:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # --------------------------------------------------------------------------
+  # Frontend — React SPA served by nginx
+  # --------------------------------------------------------------------------
+  frontend:
+    build:
+      context: ../..
+      dockerfile: deployment/docker/Dockerfile.frontend
+    container_name: medical-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  ollama-data:
+    name: medical-ollama-data
+  app-data:
+    name: medical-app-data
