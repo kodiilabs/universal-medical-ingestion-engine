@@ -1,0 +1,34 @@
+# Ollama Modelfile for MedGemma 4B (GGUF from HuggingFace)
+#
+# Setup Instructions:
+# 1. Download the GGUF file from HuggingFace:
+#    huggingface-cli download unsloth/medgemma-4b-it-GGUF medgemma-4b-it-Q4_K_M.gguf --local-dir ./models
+#
+# 2. Create the Ollama model:
+#    ollama create medgemma-4b-local -f models/Modelfile.medgemma
+#
+# 3. Test the model:
+#    ollama run medgemma-4b-local "What is the normal range for fasting blood glucose?"
+
+FROM ./medgemma-4b-it-Q4_K_M.gguf
+
+# MedGemma is a medical-focused model - set appropriate parameters
+PARAMETER temperature 0.1
+PARAMETER top_p 0.9
+PARAMETER num_ctx 4096
+
+# System prompt for medical document analysis
+SYSTEM """You are MedGemma, a medical AI assistant specialized in analyzing medical documents and extracting structured information. You help with:
+- Extracting patient information from medical records
+- Identifying medications, dosages, and instructions
+- Interpreting lab results and their clinical significance
+- Classifying medical document types
+- Providing accurate, factual medical information
+
+Always respond in a structured format when extracting information. Be precise and factual."""
+
+# Template for the model (Gemma instruction format)
+TEMPLATE """<start_of_turn>user
+{{ .Prompt }}<end_of_turn>
+<start_of_turn>model
+{{ .Response }}<end_of_turn>"""
